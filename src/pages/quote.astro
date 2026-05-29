@@ -1,0 +1,147 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout
+  title="Get a Free Quote | Kitchen Renovations Canberra"
+  description="Get a free kitchen renovation quote in Canberra & the ACT — full renovation, custom cabinetry, benchtops, design or makeover. ACT-licensed builders. Free in-home measure. We reply within 1 business day."
+  canonical="https://kitchenrenovationscanberra.com.au/quote/">
+
+  <section class="hero" style="padding: 2.5rem 0 3rem;">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Free Measure &amp; Quote</span>
+      <h1>Get your free kitchen quote.</h1>
+      <p class="hero-sub">
+        Tell us about your kitchen &mdash; a full renovation, custom cabinetry,
+        a new benchtop, a design, or a budget makeover. We&rsquo;ll arrange a
+        free in-home measure across Canberra &amp; the ACT and come back with a
+        clear, itemised, fixed-price quote. No obligation, no pressure.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="form-wrap">
+        <div class="form-card">
+          <form name="quote" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks/">
+            <input type="hidden" name="form-name" value="quote" />
+            <p style="display:none;"><label>Don&rsquo;t fill this out: <input name="bot-field" /></label></p>
+
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="04xx xxx xxx" />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+
+            <label for="suburb">Suburb / postcode</label>
+            <input id="suburb" name="suburb" type="text" autocomplete="address-level2" required placeholder="e.g. Belconnen 2617, Gungahlin 2912, Woden 2606" />
+
+            <label for="service-type">What do you need?</label>
+            <select id="service-type" name="service-type">
+              <option value="not-sure">Not sure &mdash; want a recommendation</option>
+              <option value="full-kitchen-renovation">Full kitchen renovation</option>
+              <option value="custom-cabinetry">Custom cabinetry &amp; joinery</option>
+              <option value="benchtops">Stone or laminate benchtop</option>
+              <option value="kitchen-design">Kitchen design &amp; layout</option>
+              <option value="kitchen-makeover">Budget kitchen makeover</option>
+            </select>
+
+            <label for="property-type">Property type</label>
+            <select id="property-type" name="property-type">
+              <option value="house">Free-standing house</option>
+              <option value="townhouse">Townhouse</option>
+              <option value="apartment">Apartment / unit</option>
+              <option value="new-build">New build / knock-down-rebuild</option>
+              <option value="investment">Investment / rental property</option>
+              <option value="other">Other</option>
+            </select>
+
+            <label for="age">Approximate age of home</label>
+            <select id="age" name="age">
+              <option value="not-sure">Not sure</option>
+              <option value="pre-1980">Pre-1980 (asbestos check needed)</option>
+              <option value="1980-2000">1980&ndash;2000</option>
+              <option value="2000-2015">2000&ndash;2015</option>
+              <option value="2015-plus">Post-2015 (modern)</option>
+              <option value="under-construction">Under construction</option>
+            </select>
+
+            <label for="budget">Approximate budget</label>
+            <select id="budget" name="budget">
+              <option value="not-sure">Not sure yet</option>
+              <option value="under-15k">Under $15,000 (makeover)</option>
+              <option value="15-30k">$15,000&ndash;$30,000</option>
+              <option value="30-50k">$30,000&ndash;$50,000</option>
+              <option value="50-80k">$50,000&ndash;$80,000</option>
+              <option value="80k-plus">$80,000+</option>
+            </select>
+
+            <label for="timeframe">Timeframe</label>
+            <select id="timeframe" name="timeframe">
+              <option value="asap">As soon as possible</option>
+              <option value="1-3-months">Within 1&ndash;3 months</option>
+              <option value="3-6-months">Within 3&ndash;6 months</option>
+              <option value="planning">Just planning / researching</option>
+              <option value="before-selling">Before selling the home</option>
+            </select>
+
+            <label for="benchtop">Benchtop preference (if known)</label>
+            <select id="benchtop" name="benchtop">
+              <option value="not-sure">Not sure / need advice</option>
+              <option value="porcelain">Porcelain / sintered stone</option>
+              <option value="natural-stone">Natural stone (granite, marble, quartzite)</option>
+              <option value="low-silica-engineered">Low-silica engineered stone</option>
+              <option value="laminate">Laminate</option>
+            </select>
+
+            <label for="message">Tell us about your kitchen (optional)</label>
+            <textarea id="message" name="message" rows="4" placeholder="What you'd like to change, whether you want to open up the layout, any must-haves (island, butler's pantry), and your timeframe or deadline."></textarea>
+
+            <button class="btn btn-primary btn-block" type="submit">Send my quote request</button>
+
+            <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--c-muted);">We reply within 1 business day. Free in-home measure, no obligation. Calls answered Mon&ndash;Sat 7am&ndash;5pm.</p>
+          </form>
+        </div>
+
+        <aside class="form-aside">
+          <h3>Prefer to talk?</h3>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#9742;</span>
+            <div>
+              <strong>Phone</strong>
+              <a class="ph-cta" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+              <p style="font-size:0.85rem; color:var(--c-muted); margin:0;">Mon&ndash;Sat 7am&ndash;5pm AEST</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#9978;</span>
+            <div>
+              <strong>Service area</strong>
+              <p style="margin:0;">Canberra &amp; the ACT &mdash; Belconnen, Gungahlin, Tuggeranong, Woden, Dickson, plus Queanbeyan, Weston Creek, Molonglo and Kingston.</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#10004;</span>
+            <div>
+              <strong>What you&rsquo;ll get</strong>
+              <ul style="margin:0.4rem 0 0; padding-left:1rem; font-size:0.95rem; color:var(--c-text);">
+                <li>Free in-home measure and 3D design concept</li>
+                <li>Clear, itemised, fixed-price quote</li>
+                <li>A written program so you know the timeline</li>
+                <li>Honest advice on makeover vs full renovation</li>
+                <li>ACT-licensed, NCC-compliant work</li>
+                <li>Compliant stone &amp; proper asbestos checks on older homes</li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</Layout>

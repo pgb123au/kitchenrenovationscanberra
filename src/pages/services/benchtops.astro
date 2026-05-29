@@ -1,0 +1,167 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can I still get a stone benchtop in Canberra after the engineered-stone ban?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. From 1 July 2024, the manufacture, supply, processing and installation of high-silica engineered stone was banned nationally (imports prohibited from 1 January 2025) because cutting it caused silicosis in stonemasons. You can still get a beautiful stone benchtop — natural stone (granite, marble, quartzite), porcelain / sintered stone, and the new low-silica engineered products under 1% crystalline silica are all legal and available in Canberra. We only fabricate and install compliant materials." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a benchtop cost in Canberra in 2026?",
+      "acceptedAnswer": { "@type": "Answer", "text": "As a 2026 guide, supplied and installed: low-silica engineered stone roughly $550–$1,200 per m²; granite about $600–$1,400 per m²; porcelain / sintered stone about $1,100–$2,400 per m²; marble about $900–$2,500 per m²; and quartzite about $1,400–$3,000 per m². Laminate is far cheaper. A typical kitchen needs around 4–6 m² including the island, so a porcelain benchtop on an average kitchen often lands around $5,000–$6,500 installed. Price depends on slab choice, edge profile, cut-outs and waterfall ends." }
+    },
+    {
+      "@type": "Question",
+      "name": "Which benchtop material is best for a busy family kitchen?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Porcelain (sintered stone) is hard to beat for a family kitchen — extremely heat, scratch and stain resistant, and now a leading choice post-ban. Granite is durable and forgiving. Quartzite is a natural premium option that's very hard. Marble is stunning but softer and stains more easily, so it suits owners happy to maintain it. We match the material to how you actually use the kitchen and to your budget, rather than pushing one product." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you handle templating and installation?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — supply, digital templating and installation. Once the cabinetry is installed and level, we template the benchtop, the slab is cut and fabricated, and we fit it about a week later. Stone needs that gap between template and install for accurate fabrication. We seal joins, fit the sink and cooktop cut-outs, and coordinate the plumber for final connection." }
+    }
+  ]
+};
+---
+<Layout
+  title="Kitchen Benchtops Canberra | Stone, Porcelain &amp; Laminate"
+  description="Kitchen benchtops across Canberra & the ACT — natural stone, porcelain/sintered stone, low-silica engineered stone (2024 ban compliant) and laminate, supplied, templated and installed. 2026 price guide inside."
+  canonical="https://kitchenrenovationscanberra.com.au/services/benchtops/"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Natural stone &middot; porcelain &middot; low-silica engineered &middot; laminate</span>
+      <h1>Kitchen benchtops across <span class="accent">Canberra</span>.</h1>
+      <p class="hero-sub">
+        Natural stone, porcelain / sintered stone, compliant low-silica
+        engineered stone and quality laminate &mdash; supplied, digitally
+        templated and installed. Done the legal, safe way after the 2024
+        engineered-stone ban, with suppliers who follow Safe Work Australia
+        dust controls. $550&ndash;$3,000 per m&sup2; supplied and installed,
+        depending on material.
+      </p>
+      <div class="hero-actions">
+        <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Choosing a benchtop after the engineered-stone ban.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>What the 2024 ban actually changed.</h3>
+        <p>
+          From <strong>1 July 2024</strong>, the manufacture, supply, processing
+          and installation of high-silica engineered stone was prohibited across
+          Australia, and from <strong>1 January 2025</strong> it became a
+          prohibited import. The reason is serious: cutting and grinding
+          high-silica engineered stone created respirable crystalline silica dust
+          that caused an epidemic of silicosis among stonemasons. The ban is
+          enforced by <strong>Safe Work Australia</strong> and the territory
+          regulator. It does <em>not</em> mean you can&rsquo;t have a stone
+          benchtop &mdash; it means the dangerous high-silica product is gone.
+        </p>
+
+        <h3 style="margin-top: 2rem;">What you can still have &mdash; and what we install.</h3>
+        <ul>
+          <li><strong>Natural stone</strong> &mdash; granite, marble, quartzite. Timeless, each slab unique.</li>
+          <li><strong>Porcelain / sintered stone</strong> &mdash; extremely heat, scratch and stain resistant; a leading post-ban choice.</li>
+          <li><strong>Low-silica engineered stone</strong> &mdash; the new compliant products under 1% crystalline silica, legal to fabricate and install.</li>
+          <li><strong>Laminate</strong> &mdash; huge range, great value, ideal for budget makeovers and rentals.</li>
+        </ul>
+        <p>
+          We only fabricate and install compliant materials, through stone
+          suppliers who run the required dust controls. We will not source banned
+          high-silica engineered stone, even if asked &mdash; it&rsquo;s illegal
+          and it puts tradespeople at risk.
+        </p>
+
+        <h3 style="margin-top: 2rem;">2026 Canberra benchtop price guide.</h3>
+        <p>Supplied and installed, per square metre (slab and finish dependent):</p>
+        <ul>
+          <li><strong>Laminate:</strong> the most affordable option &mdash; ideal for budget makeovers.</li>
+          <li><strong>Low-silica engineered stone:</strong> $550&ndash;$1,200 per m&sup2;.</li>
+          <li><strong>Granite:</strong> $600&ndash;$1,400 per m&sup2;.</li>
+          <li><strong>Marble:</strong> $900&ndash;$2,500 per m&sup2;.</li>
+          <li><strong>Porcelain / sintered stone:</strong> $1,100&ndash;$2,400 per m&sup2;.</li>
+          <li><strong>Quartzite:</strong> $1,400&ndash;$3,000 per m&sup2;.</li>
+        </ul>
+        <p>
+          A typical kitchen needs around 4&ndash;6 m&sup2; including the island,
+          so a porcelain benchtop on an average kitchen often lands around
+          $5,000&ndash;$6,500 installed. Waterfall ends, thick mitred edges and
+          extra cut-outs add to the figure.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Templating &amp; installation.</h3>
+        <ol>
+          <li><strong>Cabinetry first.</strong> The <a href="/services/custom-cabinetry/">cabinets</a> must be installed and level before templating.</li>
+          <li><strong>Digital template.</strong> We laser-template the exact benchtop shape, including the sink, cooktop and tap cut-outs.</li>
+          <li><strong>Fabrication.</strong> The slab is cut and edged off-site (about a week) under proper dust controls.</li>
+          <li><strong>Install.</strong> We fit the benchtop, seal joins, set the sink and cooktop, and coordinate the plumber for final connection.</li>
+        </ol>
+
+        <h3 style="margin-top: 2rem;">Compliance &amp; the rest of the job.</h3>
+        <p>
+          Benchtop installation sits within work regulated under the ACT
+          <strong>Construction Occupations (Licensing) Act 2004</strong> via
+          Access Canberra, with plumbing to <strong>AS/NZS 3500</strong> and any
+          adjoining wet-area waterproofing to <strong>AS 3740</strong>. In older
+          homes we also check for asbestos in the old splashback and substrate
+          (Canberra carries the Mr Fluffy loose-fill asbestos legacy from
+          1968&ndash;1980) before removing the existing benchtop.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Why we don&rsquo;t cut corners.</h3>
+        <p>
+          The cheapest quote in the market is sometimes cheap because someone is
+          still sourcing banned high-silica stone or skipping dust controls.
+          That&rsquo;s not a saving &mdash; it&rsquo;s a liability and a health
+          risk to the people doing the work. We quote compliant materials,
+          installed properly, sealed and finished. Choose your slab as part of a
+          <a href="/services/kitchen-design/">full kitchen design</a> or a
+          <a href="/services/full-kitchen-renovation/">complete renovation</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/belconnen/">Belconnen</a>
+        <a class="area-pill" href="/gungahlin/">Gungahlin</a>
+        <a class="area-pill" href="/tuggeranong/">Tuggeranong</a>
+        <a class="area-pill" href="/woden/">Woden</a>
+        <a class="area-pill" href="/dickson/">Dickson</a>
+        <a class="area-pill" href="/canberra-region/">All Canberra &amp; the ACT</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free benchtop quote.</h2>
+        <p>Compliant stone, porcelain or laminate. Digital template, proper install. Help choosing the right slab.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+          <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,165 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a full kitchen renovation cost in Canberra?",
+      "acceptedAnswer": { "@type": "Answer", "text": "In 2026, a mid-range full kitchen renovation in Canberra — custom soft-close cabinetry, a stone or porcelain benchtop, quality appliances and minor layout tweaks — typically runs $27,500 to $50,000. Budget and flat-pack full renovations start around $13,000–$27,500, while a premium fully-custom kitchen can reach $88,000 or more. Relocating the sink or cooktop adds roughly $3,000–$8,000 in plumbing and electrical. We provide a fixed written quote after a site measure." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does a full kitchen renovation need building approval in the ACT?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A like-for-like renovation that keeps the same footprint and doesn't touch load-bearing structure usually doesn't need development approval through ACTPLA — but the plumbing and electrical must be done by ACT-licensed trades and certified regardless. Removing a load-bearing wall to open up to living spaces (very common in Canberra renovations) does require a licensed builder and often a building certifier. We confirm exactly what your job needs before we start." }
+    },
+    {
+      "@type": "Question",
+      "name": "How long will my kitchen be out of action?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Most full kitchen renovations are 3–5 weeks on site once cabinetry is manufactured. Cabinetry lead time (3–6 weeks) runs in parallel with design, so the disruptive on-site phase is contained. Stone benchtops add about a week between template and install. We give a written program with the quote and set up a temporary kitchen plan so you're not caught out." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you handle the plumbing and electrical too?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. A full renovation is managed end-to-end — we coordinate ACT-licensed plumbers and electricians as part of the one fixed-price job, with the plumbing done to AS/NZS 3500 and the work certified. You get one accountable team and one set of compliance certificates at handover, rather than chasing six separate trades yourself." }
+    }
+  ]
+};
+---
+<Layout
+  title="Full Kitchen Renovation Canberra | Design to Fit-Off"
+  description="Full kitchen renovations across Canberra & the ACT — design, demolition, custom cabinetry, stone benchtops, plumbing, electrical and fit-off by one ACT-licensed team. Fixed-price. 2026 cost guide inside."
+  canonical="https://kitchenrenovationscanberra.com.au/services/full-kitchen-renovation/"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Design &middot; demolition &middot; cabinetry &middot; benchtops &middot; fit-off</span>
+      <h1>Full kitchen renovation across <span class="accent">Canberra</span>.</h1>
+      <p class="hero-sub">
+        The complete job, managed by one ACT-licensed team &mdash; 3D design,
+        strip-out, custom cabinetry, stone or porcelain benchtops, plumbing,
+        electrical, splashback and appliance fit-off, all to one fixed price.
+        Mid-range Canberra kitchens typically land at $27,500&ndash;$50,000.
+      </p>
+      <div class="hero-actions">
+        <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>What a full kitchen renovation includes.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>Everything from the first measure to the final clean.</h3>
+        <p>
+          A full renovation means we take responsibility for the whole project,
+          not just the cabinets. That covers: in-home measure and 3D design;
+          itemised fixed-price quote and written program; demolition and removal
+          of the old kitchen; any wall changes (with the right approvals);
+          rough-in and certification of plumbing to <strong>AS/NZS 3500</strong>
+          and electrical to <strong>AS/NZS 3000</strong>; Australian-made custom
+          cabinetry; benchtop template and install; splashback and tiling;
+          appliance and tapware fit-off; and a final defect walk-through with
+          compliance certificates. One contact, start to finish.
+        </p>
+
+        <h3 style="margin-top: 2rem;">2026 Canberra cost bands.</h3>
+        <p>
+          Canberra kitchen renovation prices rose through 2025&ndash;26 on strong
+          construction demand and trade shortages. Honest ranges for a full reno:
+        </p>
+        <ul>
+          <li><strong>Budget / flat-pack full reno:</strong> $13,000&ndash;$27,500 &mdash; modular cabinets, laminate or entry stone, keep existing layout.</li>
+          <li><strong>Mid-range (most common):</strong> $27,500&ndash;$50,000 &mdash; custom soft-close joinery, stone or porcelain benchtop, quality appliances, minor layout tweaks.</li>
+          <li><strong>Premium / fully custom:</strong> $60,000&ndash;$88,000+ &mdash; bespoke cabinetry, island and butler&rsquo;s pantry, premium stone, integrated appliances, structural changes.</li>
+          <li><strong>Relocating sink / cooktop:</strong> add $3,000&ndash;$8,000 in plumbing + electrical.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">The renovation process, step by step.</h3>
+        <ol>
+          <li><strong>Design &amp; measure.</strong> We measure, discuss how you use the kitchen, and produce a 3D layout with finishes.</li>
+          <li><strong>Fixed quote &amp; program.</strong> Itemised written quote, timeline, and a clear statement of any ACTPLA approval or asbestos checks needed.</li>
+          <li><strong>Manufacture &amp; book.</strong> Cabinetry goes into production (3&ndash;6 weeks) while we lock in trades.</li>
+          <li><strong>Strip-out &amp; rough-in.</strong> Demolition, then plumbing and electrical rough-in, inspected and certified.</li>
+          <li><strong>Install &amp; fit-off.</strong> Cabinetry, benchtop template + fit, splashback, appliances, tapware, final clean and handover.</li>
+        </ol>
+
+        <h3 style="margin-top: 2rem;">Licensing, approvals &amp; compliance.</h3>
+        <p>
+          Building work in the ACT is regulated under the <strong>Construction
+          Occupations (Licensing) Act 2004</strong> through Access Canberra, and
+          building approvals run through ACT Planning (ACTPLA). A like-for-like
+          kitchen swap generally doesn&rsquo;t need development approval, but
+          opening up a wall does &mdash; and the plumbing and electrical always
+          need licensed, certified trades. Where a kitchen adjoins a wet area we
+          waterproof to <strong>AS 3740</strong>. We hold the ACT licences for
+          the work and tell you exactly what approvals apply &mdash; we don&rsquo;t
+          quietly skip a certifier to win a job.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Older homes: the asbestos &amp; Mr Fluffy check.</h3>
+        <p>
+          Canberra has a real asbestos history. Homes built before the mid-1980s
+          can contain bonded asbestos in wall sheeting, vinyl floor backing and
+          old splashbacks, and the ACT carries the <strong>Mr Fluffy loose-fill
+          asbestos legacy</strong> from insulation installed between 1968 and 1980.
+          Before any demolition in an older home we identify suspect materials and
+          arrange licensed testing and removal where required. We never disturb
+          material we suspect contains asbestos &mdash; it&rsquo;s a legal and
+          safety requirement, and we build it into the program honestly rather
+          than discovering it mid-job.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Why we don&rsquo;t cut corners.</h3>
+        <p>
+          A kitchen is the highest-use room in the house and the highest-ticket
+          residential renovation most people ever do. Skipping a plumbing
+          certificate, installing banned high-silica stone, or papering over
+          asbestos to hit a price might look cheaper today &mdash; it isn&rsquo;t
+          when it fails, voids your insurance, or has to be redone. We&rsquo;d
+          rather quote it straight, do it once, and stand behind it. See our
+          <a href="/services/custom-cabinetry/">custom cabinetry</a>,
+          <a href="/services/benchtops/">benchtops</a> and
+          <a href="/services/kitchen-design/">kitchen design</a> for how the
+          pieces come together.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/belconnen/">Belconnen</a>
+        <a class="area-pill" href="/gungahlin/">Gungahlin</a>
+        <a class="area-pill" href="/tuggeranong/">Tuggeranong</a>
+        <a class="area-pill" href="/woden/">Woden</a>
+        <a class="area-pill" href="/dickson/">Dickson</a>
+        <a class="area-pill" href="/canberra-region/">All Canberra &amp; the ACT</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Plan your full kitchen renovation.</h2>
+        <p>Free in-home measure and 3D design. Fixed written quote and program. One licensed team, design to fit-off.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+          <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

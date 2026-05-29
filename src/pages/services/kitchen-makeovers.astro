@@ -1,0 +1,147 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a budget kitchen makeover cost in Canberra?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A cosmetic kitchen makeover in Canberra can start from around $8,800 when the existing cabinet carcasses are sound and the layout stays the same. That typically covers new doors and drawer fronts, a new benchtop, handles, a respray and an updated splashback. It's a fraction of a full renovation ($27,500–$50,000 mid-range) and is the smart move when the bones of the kitchen are fine but it looks dated." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between a makeover and a full renovation?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A makeover keeps the existing cabinet carcasses and layout and refreshes the visible surfaces — doors, benchtop, handles, splashback, paint. A full renovation strips everything out and rebuilds, which lets you change the layout, move plumbing and electrical, and fit fully custom cabinetry. If your kitchen works but looks tired, a makeover is ideal. If the layout itself is the problem, you need a full renovation." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a makeover worth it before selling my home?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Often, yes. A tired kitchen is one of the first things buyers notice, and a well-judged makeover — fresh doors, a new benchtop and splashback — can lift presentation significantly for a modest spend, without the cost or time of a full renovation. We'll give you an honest view of whether a makeover or a full reno makes more sense for your home and your goal." }
+    }
+  ]
+};
+---
+<Layout
+  title="Budget Kitchen Makeovers Canberra | From $8,800"
+  description="Budget kitchen makeovers across Canberra & the ACT — new doors, benchtops, handles, respray and splashback to refresh a tired kitchen without a full rebuild. From around $8,800. Free quote."
+  canonical="https://kitchenrenovationscanberra.com.au/services/kitchen-makeovers/"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Doors &middot; benchtop &middot; handles &middot; respray &middot; splashback</span>
+      <h1>Budget kitchen makeovers across <span class="accent">Canberra</span>.</h1>
+      <p class="hero-sub">
+        A fresh kitchen without a full rebuild. If the layout works and the
+        cabinet carcasses are sound, we can transform the look with new doors,
+        a new benchtop, handles, a respray and an updated splashback &mdash; from
+        around $8,800. The smart option when the bones are fine but it just looks
+        dated.
+      </p>
+      <div class="hero-actions">
+        <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>When a makeover beats a full renovation.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>Refresh the surfaces, keep the bones.</h3>
+        <p>
+          A makeover keeps your existing cabinet carcasses and layout and renews
+          everything you see and touch. It&rsquo;s ideal when the kitchen
+          <em>works</em> &mdash; the layout flows, there&rsquo;s enough storage,
+          the plumbing is where you want it &mdash; but it looks tired and dated.
+          You skip the cost and weeks of disruption of a
+          <a href="/services/full-kitchen-renovation/">full renovation</a> and
+          still walk into a kitchen that feels new.
+        </p>
+
+        <h3 style="margin-top: 2rem;">What a makeover typically includes.</h3>
+        <ul>
+          <li><strong>New doors &amp; drawer fronts</strong> &mdash; the single biggest visual change, in a current finish and colour.</li>
+          <li><strong>New benchtop</strong> &mdash; a fresh <a href="/services/benchtops/">stone, porcelain or laminate top</a> over the existing cabinets.</li>
+          <li><strong>New handles &amp; hardware</strong> &mdash; and soft-close upgrades where the existing runners allow.</li>
+          <li><strong>Respray</strong> &mdash; of sound existing cabinetry or panels for a seamless updated colour.</li>
+          <li><strong>Updated splashback</strong> &mdash; tile, glass or a stone/porcelain upstand.</li>
+          <li><strong>Tapware &amp; sink</strong> &mdash; a new mixer and sink to finish the refresh.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">When a makeover isn&rsquo;t the right call.</h3>
+        <p>
+          We&rsquo;ll be honest with you: if the layout itself is the problem, the
+          carcasses are water-damaged or falling apart, or you want to move the
+          sink, cooktop or a wall, a makeover is a band-aid. In those cases a
+          <a href="/services/full-kitchen-renovation/">full renovation</a> with
+          <a href="/services/custom-cabinetry/">custom cabinetry</a> is the better
+          spend. We&rsquo;d rather tell you that up front than take the easy job
+          and leave you with the same underlying issues.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Great before a sale.</h3>
+        <p>
+          A dated kitchen is one of the first things buyers notice. A well-judged
+          makeover &mdash; fresh doors, new benchtop and splashback &mdash; can
+          lift presentation a long way for a modest spend, without the cost or
+          time of a full reno. If you&rsquo;re selling, we&rsquo;ll advise where
+          the money is best spent for the return.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Compliance still applies.</h3>
+        <p>
+          Even on a makeover, any plumbing or electrical changes (a new sink,
+          relocated power) must be done by ACT-licensed trades and certified
+          under the <strong>Construction Occupations (Licensing) Act 2004</strong>
+          via Access Canberra. We use only compliant benchtop materials after the
+          2024 engineered-stone ban, and in pre-1985 homes we check for asbestos
+          in the old splashback and substrate (the ACT carries the Mr Fluffy
+          loose-fill asbestos legacy from 1968&ndash;1980) before removing them.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Why we don&rsquo;t cut corners.</h3>
+        <p>
+          A cheap makeover that respray-coats grimy doors without prep, or fits a
+          benchtop over failing carcasses, looks good for a month and then fails.
+          We prep properly, only reuse cabinetry that&rsquo;s genuinely sound, and
+          finish it so it lasts. A makeover should buy you years, not weeks.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/belconnen/">Belconnen</a>
+        <a class="area-pill" href="/gungahlin/">Gungahlin</a>
+        <a class="area-pill" href="/tuggeranong/">Tuggeranong</a>
+        <a class="area-pill" href="/woden/">Woden</a>
+        <a class="area-pill" href="/dickson/">Dickson</a>
+        <a class="area-pill" href="/canberra-region/">All Canberra &amp; the ACT</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Refresh your kitchen from $8,800.</h2>
+        <p>New doors, benchtop, handles and splashback. Honest advice on makeover versus full reno. Free quote.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+          <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

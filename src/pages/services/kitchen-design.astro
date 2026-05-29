@@ -1,0 +1,149 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you charge for kitchen design?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Our in-home measure and initial 3D concept come as part of the quoting process for renovation clients — there's no separate design fee to get a layout and a fixed price. For standalone design work, or extensive revisions and detailed documentation, we agree a design fee up front. We'll always tell you clearly which applies before any work starts." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the kitchen work triangle and does it still matter?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The work triangle is the path between the sink, the cooktop and the fridge — the three points you move between most. Keeping that triangle tight and unobstructed makes a kitchen genuinely nicer to cook in. In modern open-plan and island kitchens it has evolved into 'zones' (prep, cook, clean, store), but the principle is the same: plan the flow before you commit to a layout, not after the cabinets are in." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you design around a load-bearing wall or awkward layout?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — this is exactly where good design earns its money. Many Canberra renovations want to open a closed 1970s–80s kitchen to the living area, which may involve a load-bearing wall. We design the options, advise where structural work and ACTPLA building approval are needed, and show you the layout in 3D so you can make the call with full information rather than guessing." }
+    }
+  ]
+};
+---
+<Layout
+  title="Kitchen Design &amp; Layout Canberra | 3D Design Service"
+  description="Kitchen design and layout across Canberra & the ACT — 3D design, work-triangle and zone planning, storage, lighting and finishes selected before the build starts. Free in-home measure for renovation clients."
+  canonical="https://kitchenrenovationscanberra.com.au/services/kitchen-design/"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">3D design &middot; work-triangle &middot; storage &amp; lighting</span>
+      <h1>Kitchen design &amp; layout in <span class="accent">Canberra</span>.</h1>
+      <p class="hero-sub">
+        Get the layout right on paper, not halfway through the build. We measure
+        your space, talk through how you actually cook, and produce a 3D design
+        with the work triangle, storage, lighting and finishes resolved before a
+        single tool is lifted. The cheapest change you&rsquo;ll ever make to a
+        kitchen is on the drawing.
+      </p>
+      <div class="hero-actions">
+        <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Design first &mdash; it&rsquo;s where a kitchen is won or lost.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>What the design stage delivers.</h3>
+        <p>
+          Before any demolition, we resolve the things that are expensive to
+          change later: the layout and work flow, where the plumbing and power
+          go, how much storage you actually get, the lighting plan, and the look.
+          You see it in 3D so you can stand in the kitchen before it exists. Then
+          the <a href="/services/full-kitchen-renovation/">renovation</a> follows
+          a clear plan instead of being figured out on the fly.
+        </p>
+
+        <h3 style="margin-top: 2rem;">The work triangle &amp; zones.</h3>
+        <p>
+          The classic work triangle &mdash; sink, cooktop, fridge &mdash; still
+          matters: keep those three points tight and unobstructed and the kitchen
+          is a pleasure to cook in. In open-plan and island kitchens we extend
+          this into <strong>zones</strong>: a prep zone, a cooking zone, a
+          cleaning zone and storage, each with the bench space, power and
+          drawers it needs where you reach for them.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Designing for Canberra homes.</h3>
+        <p>
+          A huge share of Canberra renovations involve opening up a closed
+          1970s&ndash;80s kitchen (<a href="/belconnen/">Belconnen</a>,
+          <a href="/tuggeranong/">Tuggeranong</a>, <a href="/woden/">Woden</a>)
+          to the living area. That often means a load-bearing wall, which brings
+          structural work and likely <strong>ACTPLA building approval</strong>
+          into play. Newer Gungahlin and inner-north homes more often want a
+          premium reconfiguration or a butler&rsquo;s pantry. We design for what
+          your home and budget actually allow, and flag approvals early.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Storage, lighting &amp; finishes.</h3>
+        <ul>
+          <li><strong>Storage planning</strong> &mdash; drawers over doors where it counts, corner solutions, pantry sizing, bin and recycling integration.</li>
+          <li><strong>Lighting</strong> &mdash; layered task lighting under overheads, ambient and feature lighting, switching that suits the zones.</li>
+          <li><strong>Finishes</strong> &mdash; cabinetry colour and texture, <a href="/services/benchtops/">benchtop</a> material and edge, splashback, tapware and handles, coordinated as a scheme.</li>
+          <li><strong>Appliances</strong> &mdash; sized and positioned correctly, with ventilation and clearances planned in.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Compliance designed in from the start.</h3>
+        <p>
+          Good design accounts for compliance, not just looks. We plan plumbing
+          runs to <strong>AS/NZS 3500</strong>, electrical and lighting to
+          <strong>AS/NZS 3000</strong>, and any adjoining wet-area waterproofing
+          to <strong>AS 3740</strong> &mdash; all delivered by ACT-licensed
+          trades under the <strong>Construction Occupations (Licensing) Act
+          2004</strong>. In pre-1985 homes we also factor in asbestos checks
+          (the ACT&rsquo;s Mr Fluffy loose-fill legacy runs 1968&ndash;1980)
+          so the program is realistic.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Why we don&rsquo;t cut corners.</h3>
+        <p>
+          The most expensive kitchens are the ones designed badly and fixed
+          mid-build &mdash; a sink in the wrong spot, not enough power, a fridge
+          that blocks the walkway. Spending the time on design up front is what
+          keeps the <a href="/services/full-kitchen-renovation/">renovation</a>
+          on budget and on program. We&rsquo;d rather get it right on the drawing
+          than rework it on site.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/belconnen/">Belconnen</a>
+        <a class="area-pill" href="/gungahlin/">Gungahlin</a>
+        <a class="area-pill" href="/tuggeranong/">Tuggeranong</a>
+        <a class="area-pill" href="/woden/">Woden</a>
+        <a class="area-pill" href="/dickson/">Dickson</a>
+        <a class="area-pill" href="/canberra-region/">All Canberra &amp; the ACT</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Start with a proper design.</h2>
+        <p>Free in-home measure and 3D concept for renovation clients. Layout, storage and finishes resolved before the build.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+          <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

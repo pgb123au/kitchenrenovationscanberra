@@ -1,0 +1,150 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does custom kitchen cabinetry cost in Canberra?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Custom cabinetry typically costs 2–3 times the price of flat-pack, and on a Canberra kitchen the cabinetry usually makes up roughly 30–45% of the total renovation. As a guide, cabinetry and joinery on a mid-range full renovation sits within that $27,500–$50,000 project, and a fully bespoke set with an island and butler's pantry pushes into the premium $60,000+ band. We quote cabinetry as an itemised line so you can see exactly what you're paying for." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is custom cabinetry worth it over flat-pack?",
+      "acceptedAnswer": { "@type": "Answer", "text": "If your kitchen has odd angles, non-standard ceiling heights, an awkward corner, or you want a specific storage solution, custom is worth it — every cabinet is built to your exact dimensions, so you use every millimetre and the finish lines up properly. Flat-pack suits simple, standard-sized galley or L-shaped kitchens on a budget. Many Canberra homes from the 1970s–80s have non-standard openings where custom genuinely fits better." }
+    },
+    {
+      "@type": "Question",
+      "name": "What materials and hardware do you use?",
+      "acceptedAnswer": { "@type": "Answer", "text": "We use Australian-made cabinets with a quality carcass board, your choice of door finish (laminate, polyurethane, timber veneer or solid timber), and reputable soft-close hinges and drawer runners. We talk you through the trade-offs — polyurethane for a seamless painted look, laminate for value and durability, timber for warmth — and match the hardware to how hard the kitchen will be worked." }
+    }
+  ]
+};
+---
+<Layout
+  title="Custom Kitchen Cabinetry &amp; Joinery Canberra | Australian-Made"
+  description="Australian-made custom kitchen cabinetry and joinery across Canberra & the ACT — soft-close drawers, walk-in and butler's pantries, islands and bespoke storage built to your exact layout. Free quote."
+  canonical="https://kitchenrenovationscanberra.com.au/services/custom-cabinetry/"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Australian-made &middot; soft-close &middot; built to your layout</span>
+      <h1>Custom cabinetry &amp; joinery in <span class="accent">Canberra</span>.</h1>
+      <p class="hero-sub">
+        Cabinets built to your exact kitchen &mdash; not forced into flat-pack
+        modules. Soft-close drawers, walk-in and butler&rsquo;s pantries, island
+        benches, appliance towers and storage that actually suits how you cook.
+        Australian-made, quality hardware, and a finish that lines up properly.
+      </p>
+      <div class="hero-actions">
+        <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Cabinetry built for your kitchen, not the other way around.</h2>
+      <div style="max-width: 65rem;">
+
+        <h3>Why custom beats forcing flat-pack to fit.</h3>
+        <p>
+          Flat-pack cabinets come in fixed module widths, so an installer fills
+          the gaps with filler panels and you lose usable space. Custom cabinetry
+          is built to your exact measurements &mdash; full-height to the ceiling,
+          tailored to odd angles, and sized so every millimetre earns its keep.
+          That matters in Canberra&rsquo;s large stock of 1970s and 80s homes
+          (<a href="/belconnen/">Belconnen</a>, <a href="/tuggeranong/">Tuggeranong</a>),
+          where original openings rarely match today&rsquo;s standard module sizes.
+        </p>
+
+        <h3 style="margin-top: 2rem;">What we build.</h3>
+        <ul>
+          <li><strong>Base &amp; overhead cabinets</strong> with soft-close drawers and doors, built to your layout.</li>
+          <li><strong>Walk-in &amp; butler&rsquo;s pantries</strong> &mdash; one of the most-requested upgrades in Canberra renovation kitchens.</li>
+          <li><strong>Island benches</strong> with integrated storage, seating overhangs, power and waste.</li>
+          <li><strong>Appliance towers &amp; integrated cabinetry</strong> for ovens, microwaves and concealed fridges.</li>
+          <li><strong>Clever internal storage</strong> &mdash; corner carousels, drawer dividers, bin pull-outs, spice and tray storage.</li>
+          <li><strong>Matching joinery</strong> beyond the kitchen &mdash; laundry, study nooks and adjoining cabinetry in the same finish.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Materials &amp; hardware.</h3>
+        <p>
+          We use Australian-made cabinets with a quality carcass and your choice
+          of door finish &mdash; laminate for value and durability, polyurethane
+          for a seamless painted look, timber veneer or solid timber for warmth.
+          Hinges and drawer runners are reputable soft-close hardware matched to
+          how hard the kitchen will be worked. We walk you through the trade-offs
+          honestly rather than upselling the dearest option.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Manufacture &amp; install timeline.</h3>
+        <p>
+          Custom cabinetry takes roughly <strong>3&ndash;6 weeks to manufacture</strong>
+          after design sign-off. We run that lead time in parallel with the rest
+          of the planning, so it rarely adds to your on-site disruption. Install
+          is precise &mdash; cabinets are scribed to the wall, levelled, and set
+          ready for the <a href="/services/benchtops/">benchtop template</a>.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Compliance &amp; older homes.</h3>
+        <p>
+          Cabinetry itself isn&rsquo;t a licensed trade, but the renovation around
+          it is &mdash; plumbing to <strong>AS/NZS 3500</strong>, electrical to
+          <strong>AS/NZS 3000</strong>, all by ACT-licensed trades under the
+          <strong>Construction Occupations (Licensing) Act 2004</strong> through
+          Access Canberra. In pre-1985 homes (and anywhere with the ACT&rsquo;s
+          Mr Fluffy loose-fill asbestos legacy from 1968&ndash;1980), we check for
+          asbestos in old sheeting and floor coverings before stripping out the
+          existing kitchen, and arrange licensed removal where needed.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Why we don&rsquo;t cut corners.</h3>
+        <p>
+          Cheap cabinetry shows itself fast &mdash; sagging shelves, drawers that
+          drop, doors that don&rsquo;t sit square. We&rsquo;d rather build it once,
+          in Australian-made board with proper hardware, scribed and levelled on
+          install. It costs more than the cheapest flat-pack, and it lasts. Pair
+          it with a fitted <a href="/services/benchtops/">stone benchtop</a> and
+          a properly planned <a href="/services/kitchen-design/">layout</a> and
+          the kitchen works for decades. It&rsquo;s also the backbone of any
+          <a href="/services/full-kitchen-renovation/">full renovation</a> we do.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/belconnen/">Belconnen</a>
+        <a class="area-pill" href="/gungahlin/">Gungahlin</a>
+        <a class="area-pill" href="/tuggeranong/">Tuggeranong</a>
+        <a class="area-pill" href="/woden/">Woden</a>
+        <a class="area-pill" href="/dickson/">Dickson</a>
+        <a class="area-pill" href="/canberra-region/">All Canberra &amp; the ACT</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Custom cabinetry, built to fit.</h2>
+        <p>Australian-made, soft-close, scribed to your kitchen. Free measure and itemised quote.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+          <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

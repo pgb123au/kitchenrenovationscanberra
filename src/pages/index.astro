@@ -1,0 +1,221 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a kitchen renovation cost in Canberra in 2026?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Typical 2026 Canberra bands: a budget or flat-pack renovation runs $13,000–$27,500; a mid-range renovation with stone benchtops, custom soft-close joinery and quality appliances is $27,500–$50,000 (where most Canberra family kitchens land); and a premium fully-custom kitchen can reach $88,000 and beyond. A cosmetic makeover — doors, benchtop and handles without a full strip-out — can start from around $8,800. The biggest cost drivers are moving plumbing or electrical (relocating a sink or stove adds roughly $3,000–$8,000), the benchtop material you choose, and how much is fully custom versus modular. We give a fixed written quote after a site measure so there are no surprises." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need council or building approval to renovate a kitchen in Canberra?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A like-for-like kitchen renovation that does not move walls or change the building footprint usually does not need development approval through ACTPLA, but the plumbing and electrical work must still be done by ACT-licensed trades and certified. The moment you remove or alter a load-bearing wall, change windows, or significantly alter the structure, you move into building-approval territory and need a building licence holder and (often) a building certifier. We work to the National Construction Code and hold the ACT licences required, and we tell you up front whether your job needs approval — we never cut that corner." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I still get a stone benchtop after the engineered-stone ban?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. From 1 July 2024 the manufacture, supply, processing and installation of high-silica engineered stone was banned across Australia (imports prohibited from 1 January 2025) because of the silicosis risk to stonemasons. You can still get a beautiful, durable stone benchtop — natural stone (granite, marble, quartzite), porcelain / sintered stone, and the new low-silica engineered products under 1% crystalline silica are all permitted and legal to install. We only fabricate and install compliant materials, and our stone suppliers follow Safe Work Australia dust controls." }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a Canberra kitchen renovation take?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Most full kitchen renovations run 3–5 weeks on site once cabinetry is manufactured. The sequence is: design and measure (1–2 weeks), cabinetry manufacture lead time (3–6 weeks running in parallel), then demolition, rough-in plumbing and electrical, cabinetry install, benchtop template and install (stone needs about a week between template and fit), splashback, and final fit-off. A budget makeover is much faster — often under a week. We give you a written program with the quote so you know exactly how long your kitchen will be out of action." }
+    },
+    {
+      "@type": "Question",
+      "name": "My Canberra home is pre-1980 — is asbestos a concern in a kitchen reno?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It can be, and Canberra has specific history here. Homes built before the mid-1980s may contain bonded asbestos in wall sheeting, vinyl floor backing, eaves and old splashbacks, and the ACT also carries the Mr Fluffy loose-fill asbestos legacy from insulation installed between 1968 and 1980. Before any demolition in an older home we identify suspect materials and arrange licensed testing and removal where needed — we never disturb material we suspect contains asbestos. It is a safety and legal requirement, not an optional extra, and we factor it into the program honestly." }
+    }
+  ]
+};
+---
+<Layout
+  title="Kitchen Renovations Canberra | Design, Cabinetry & Stone Benchtops"
+  description="Custom kitchen renovations across Canberra & the ACT — full renovations, custom cabinetry, stone benchtops, design and budget makeovers. ACT-licensed builders. Fixed-price quotes. Free measure & quote."
+  canonical="https://kitchenrenovationscanberra.com.au/"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Belconnen &middot; Gungahlin &middot; Tuggeranong &middot; Woden &middot; Dickson</span>
+      <h1>Canberra&rsquo;s custom <span class="accent">kitchen renovation</span> team.</h1>
+      <p class="hero-sub">
+        Full kitchen renovations, Australian-made custom cabinetry, stone and
+        porcelain benchtops, considered design and budget makeovers &mdash;
+        across Canberra &amp; the ACT. Design, demolition, cabinetry, plumbing,
+        electrical and fit-off handled by one team, to one fixed price. ACT-licensed,
+        NCC-compliant, and honest about what your kitchen really needs.
+      </p>
+      <div class="hero-actions">
+        <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+
+      <div class="hero-trust">
+        <div><strong>ACT-licensed</strong>Construction Occupations licence</div>
+        <div><strong>Fixed-price</strong>Written quote, no surprises</div>
+        <div><strong>NCC + AS/NZS</strong>Compliant plumbing &amp; waterproofing</div>
+        <div><strong>One team</strong>Design to fit-off</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">What we do</span>
+      <h2>Five kitchen services.</h2>
+      <p class="section-lead">
+        From a budget makeover that refreshes a tired kitchen for a few thousand,
+        through to a fully custom $80K+ renovation with stone benchtops and
+        Australian-made joinery. One licensed team designs it, builds it, and
+        finishes it &mdash; no juggling six different trades yourself.
+      </p>
+
+      <div class="svc-grid">
+        <a class="svc-card" href="/services/full-kitchen-renovation/">
+          <div class="svc-icon" aria-hidden="true">&#9632;</div>
+          <h3>Full kitchen renovation</h3>
+          <p>End-to-end: design, demolition, custom cabinetry, benchtops, plumbing, electrical, splashback and appliance fit-off. One team, one fixed price, one program. Mid-range $27.5K&ndash;$50K typical.</p>
+          <span class="svc-link">See full renovations &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/custom-cabinetry/">
+          <div class="svc-icon" aria-hidden="true">&#9707;</div>
+          <h3>Custom cabinetry &amp; joinery</h3>
+          <p>Australian-made cabinets built to your exact layout &mdash; soft-close drawers, walk-in and butler&rsquo;s pantries, island benches and clever storage. Better fit and finish than flat-pack.</p>
+          <span class="svc-link">See cabinetry &amp; joinery &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/benchtops/">
+          <div class="svc-icon" aria-hidden="true">&#9644;</div>
+          <h3>Stone &amp; laminate benchtops</h3>
+          <p>Natural stone, porcelain / sintered stone, low-silica engineered stone (fully compliant with the 2024 ban) and quality laminate &mdash; supplied, templated and installed. $550&ndash;$3,000 per m&sup2; supplied + installed.</p>
+          <span class="svc-link">See benchtops &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/kitchen-design/">
+          <div class="svc-icon" aria-hidden="true">&#9634;</div>
+          <h3>Kitchen design &amp; layout</h3>
+          <p>3D design, work-triangle and storage planning, lighting and finishes selected before a single tool is lifted. Get the layout right on paper, not halfway through the build.</p>
+          <span class="svc-link">See kitchen design &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/kitchen-makeovers/">
+          <div class="svc-icon" aria-hidden="true">&#9650;</div>
+          <h3>Budget kitchen makeovers</h3>
+          <p>New doors, benchtop and handles, a respray and updated splashback &mdash; a fresh kitchen without a full rebuild. From around $8,800 when the existing carcasses are sound.</p>
+          <span class="svc-link">See makeovers &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why a Canberra specialist</span>
+      <h2>Three things every Canberra kitchen renovation should get right.</h2>
+      <div class="divider"></div>
+
+      <div style="display: grid; grid-template-columns: 1fr; gap: 2rem; max-width: 60rem;">
+        <div>
+          <h3>The right team for Canberra&rsquo;s housing stock.</h3>
+          <p>
+            Canberra is full of large 1970s and 80s districts &mdash; Belconnen,
+            Tuggeranong, Woden &mdash; where the original kitchen is long overdue
+            for renovation, alongside newer Gungahlin and inner-north homes wanting
+            a premium upgrade. Each era has its own quirks: older sub-floors and
+            services that need re-routing, asbestos caution in pre-1985 homes, and
+            modern slab homes where moving plumbing means cutting the slab. We&rsquo;ve
+            worked across all of it and quote for what your home actually involves,
+            not a one-size template.
+          </p>
+        </div>
+        <div>
+          <h3>Compliant stone &mdash; and honest about the ban.</h3>
+          <p>
+            Since 1 July 2024 high-silica engineered stone has been banned across
+            Australia to protect stonemasons from silicosis. Some operators still
+            cut corners. We only fabricate and install compliant materials &mdash;
+            natural stone, porcelain, and low-silica engineered stone under 1%
+            crystalline silica &mdash; through suppliers who follow Safe Work
+            Australia dust controls. You still get a stunning, durable benchtop;
+            it&rsquo;s just done the legal, safe way.
+          </p>
+        </div>
+        <div>
+          <h3>One fixed price, one program, one accountable team.</h3>
+          <p>
+            A kitchen reno touches cabinetry, stone, plumbing, electrical, tiling
+            and appliances. Manage it yourself and a slipped trade can stall the
+            whole job. We coordinate every trade to a written program and a fixed
+            price agreed before we start, with the plumbing and electrical certified
+            and the waterproofing done to AS 3740 where it applies. You get one
+            point of contact from the first measure to the final clean.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Service areas</span>
+      <h2>Where we renovate.</h2>
+      <p class="lead" style="max-width: 42rem; margin-bottom: 1rem;">
+        Right across Canberra &amp; the ACT &mdash; the established 1970s&ndash;80s
+        districts, the newer northern suburbs, the premium inner-north, and into
+        Queanbeyan and the surrounding region. Free in-home measure and quote
+        most weeks.
+      </p>
+      <div class="areas-grid">
+        <a class="area-pill" href="/belconnen/">Belconnen</a>
+        <a class="area-pill" href="/gungahlin/">Gungahlin</a>
+        <a class="area-pill" href="/tuggeranong/">Tuggeranong</a>
+        <a class="area-pill" href="/woden/">Woden</a>
+        <a class="area-pill" href="/dickson/">Dickson</a>
+        <a class="area-pill" href="/canberra-region/">Canberra &amp; the ACT</a>
+        <span class="area-pill area-pill-static">Queanbeyan</span>
+        <span class="area-pill area-pill-static">Weston Creek</span>
+        <span class="area-pill area-pill-static">Molonglo Valley</span>
+        <span class="area-pill area-pill-static">Kingston</span>
+        <span class="area-pill area-pill-static">Civic</span>
+        <span class="area-pill area-pill-static">Tuggeranong Valley</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark">
+    <div class="section-inner">
+      <span class="section-eyebrow">How it works</span>
+      <h2>From first measure to final fit-off &mdash; 5 stages.</h2>
+
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><h3>Design &amp; measure</h3><p>We visit, measure, talk through how you actually use the kitchen, and produce a 3D design with a clear layout and finishes selection.</p></div>
+        <div class="step"><div class="step-num">2</div><h3>Fixed quote</h3><p>A written, itemised, fixed-price quote and program &mdash; including whether the job needs ACTPLA approval and any asbestos checks for older homes.</p></div>
+        <div class="step"><div class="step-num">3</div><h3>Make &amp; strip-out</h3><p>Cabinetry is manufactured while we book trades. Then demolition, and rough-in of plumbing and electrical to AS/NZS standards.</p></div>
+        <div class="step"><div class="step-num">4</div><h3>Install</h3><p>Cabinetry installed, benchtop templated and fitted, splashback and tiling, then appliance and tapware fit-off. Plumbing and electrical certified.</p></div>
+        <div class="step"><div class="step-num">5</div><h3>Handover</h3><p>Final clean, defect walk-through, compliance certificates and care guide. We don&rsquo;t call it done until you&rsquo;re happy with it.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Ready to plan your new kitchen?</h2>
+        <p>Free in-home measure and 3D design. Fixed written quote. One licensed team from design to fit-off.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+          <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

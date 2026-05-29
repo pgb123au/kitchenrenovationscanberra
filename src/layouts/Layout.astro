@@ -1,0 +1,254 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  ogType?: string;
+}
+
+const SITE = 'https://kitchenrenovationscanberra.com.au';
+const PHONE_DISPLAY = '';
+const PHONE_TEL = '+61485939966';
+const EMAIL = 'quotes@kitchenrenovationscanberra.com.au';
+const BIZ_NAME = 'Kitchen Renovations Canberra';
+
+const { title, description, canonical = SITE + '/', ogType = 'website' } = Astro.props;
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "GeneralContractor",
+  "@id": SITE + "/#business",
+  "name": BIZ_NAME,
+  "image": SITE + "/images/og-image.jpg",
+  "url": SITE,
+  "priceRange": "$$$",
+  "description": "Custom kitchen renovation specialists across Canberra & the ACT. Full kitchen renovations, custom cabinetry and joinery, stone benchtops (compliant with the 2024 engineered-stone silica ban), kitchen design and budget makeovers. ACT-licensed builders working to the National Construction Code, AS/NZS 3500 plumbing and AS 3740 waterproofing. Honest fixed-price quotes — design, demolition and fit-off by one team.",
+  "areaServed": [
+    { "@type": "City", "name": "Canberra", "containedInPlace": { "@type": "AdministrativeArea", "name": "Canberra & the ACT" } },
+    { "@type": "City", "name": "Belconnen" },
+    { "@type": "City", "name": "Gungahlin" },
+    { "@type": "City", "name": "Tuggeranong" },
+    { "@type": "City", "name": "Woden" },
+    { "@type": "City", "name": "Dickson" },
+    { "@type": "City", "name": "Queanbeyan" },
+    { "@type": "City", "name": "Weston Creek" },
+    { "@type": "City", "name": "Molonglo" },
+    { "@type": "City", "name": "Kingston" }
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Canberra",
+    "addressRegion": "ACT",
+    "postalCode": "2600",
+    "addressCountry": "AU"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -35.2809,
+    "longitude": 149.1300
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "07:00",
+    "closes": "17:00"
+  }],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Kitchen Renovation Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Full Kitchen Renovation" }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Cabinetry & Joinery" }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Stone & Laminate Benchtops" }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kitchen Design & Layout" }},
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Budget Kitchen Makeovers" }}
+    ]
+  }
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": SITE + "/#website",
+  "url": SITE + "/",
+  "name": BIZ_NAME,
+  "inLanguage": "en-AU",
+  "publisher": { "@id": SITE + "/#business" }
+};
+// BreadcrumbList JSON-LD auto-generated from Astro.url.pathname
+const pathname = Astro.url.pathname;
+const breadcrumbSegments = pathname.split('/').filter(Boolean);
+const breadcrumbItems = [{ "@type": "ListItem", "position": 1, "name": "Home", "item": SITE + "/" }];
+let cumulative = SITE;
+breadcrumbSegments.forEach((seg, i) => {
+  cumulative += '/' + seg;
+  // Human-friendly name: kebab → Title Case, special-case 'services' → Services
+  const friendly = seg === 'services'
+    ? 'Services'
+    : seg.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+  breadcrumbItems.push({
+    "@type": "ListItem",
+    "position": i + 2,
+    "name": friendly,
+    "item": cumulative + '/'
+  });
+});
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": breadcrumbItems
+};
+
+---
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{title}</title>
+  <meta name="description" content={description}>
+  <link rel="canonical" href={canonical}>
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#1f2937">
+
+  <meta property="og:type" content={ogType}>
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="og:url" content={canonical}>
+  <meta property="og:locale" content="en_AU">
+  <meta property="og:site_name" content={BIZ_NAME}>
+  <meta property="og:image" content={SITE + "/images/og-image.jpg"}>
+  <meta property="og:image:secure_url" content={SITE + "/images/og-image.jpg"}>
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content={BIZ_NAME + " — free quote, call today"}>
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content={title}>
+  <meta name="twitter:description" content={description}>
+  <meta name="twitter:image" content={SITE + "/images/og-image.jpg"}>
+  <meta name="twitter:image:alt" content={BIZ_NAME + " — free quote, call today"}>
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&family=Playfair+Display:wght@900&family=Stardos+Stencil:wght@700&display=swap">
+
+  <!-- Google Search Console verification (DNS TXT primary; meta backup) -->
+  <meta name="google-site-verification" content="GSC-TOKEN-PLACEHOLDER">
+
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX', {
+      'send_page_view': true,
+      'anonymize_ip': true
+    });
+  </script>
+
+  <script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <slot name="head" />
+</head>
+<body>
+  <div class="top-bar">
+    <span>Custom kitchen renovations &middot; Design, cabinetry &amp; stone benchtops &middot; Across Canberra &amp; the ACT &middot; <a class="ph-cta" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span><span class="ph-text">&nbsp;Tap to call</span></a></span>
+  </div>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="/" aria-label="Kitchen Renovations Canberra home">
+        <img src="/images/logo.svg" alt="Kitchen Renovations Canberra" width="320" height="80" decoding="async">
+      </a>
+      <ul class="nav-links">
+        <li><a href="/services/full-kitchen-renovation/">Full Reno</a></li>
+        <li><a href="/services/custom-cabinetry/">Cabinetry</a></li>
+        <li><a href="/services/benchtops/">Benchtops</a></li>
+        <li><a href="/services/kitchen-design/">Design</a></li>
+        <li><a href="/services/kitchen-makeovers/">Makeovers</a></li>
+        <li><a href="/canberra-region/">Areas</a></li>
+      </ul>
+      <a class="nav-cta" href="/quote/">Get a Quote</a>
+    </div>
+  </header>
+
+  <main>
+    <slot />
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <h4>Kitchen Renovations Canberra</h4>
+        <p style="margin-bottom: 0.75rem;">ACT-licensed kitchen renovation builders for Canberra &amp; the ACT. Full renovations, custom cabinetry and joinery, stone benchtops (compliant with the 2024 engineered-stone silica ban), kitchen design and budget makeovers. Work delivered to the National Construction Code, AS/NZS 3500 and AS 3740.</p>
+        <p style="margin-bottom: 0.5rem;"><strong style="color:#fff;">Phone:</strong> <a class="ph-cta" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span><span class="ph-text">&nbsp;Tap to call</span></a></p>
+        <p style="margin-bottom: 0.5rem;"><strong style="color:#fff;">Hours:</strong> Mon&ndash;Sat 7am&ndash;5pm AEST</p>
+        <p style="margin-bottom: 0.5rem;"><strong style="color:#fff;">Service area:</strong> Canberra &amp; the ACT &mdash; Belconnen, Gungahlin, Tuggeranong, Woden, Dickson, Queanbeyan</p>
+        <p style="margin-bottom: 0;"><strong style="color:#fff;">ABN:</strong> 91 664 546 061</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="/services/full-kitchen-renovation/">Full kitchen renovation</a></li>
+          <li><a href="/services/custom-cabinetry/">Custom cabinetry &amp; joinery</a></li>
+          <li><a href="/services/benchtops/">Stone &amp; laminate benchtops</a></li>
+          <li><a href="/services/kitchen-design/">Kitchen design &amp; layout</a></li>
+          <li><a href="/services/kitchen-makeovers/">Budget kitchen makeovers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Service Areas</h4>
+        <ul>
+          <li><a href="/belconnen/">Belconnen</a></li>
+          <li><a href="/gungahlin/">Gungahlin</a></li>
+          <li><a href="/tuggeranong/">Tuggeranong</a></li>
+          <li><a href="/woden/">Woden</a></li>
+          <li><a href="/dickson/">Dickson</a></li>
+          <li><a href="/canberra-region/">All Canberra &amp; the ACT</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-bottom">
+      &copy; {new Date().getFullYear()} {BIZ_NAME} &middot; Yes Right Pty Ltd ABN 91 664 546 061. Custom kitchen renovations, cabinetry &amp; stone benchtops across Canberra &amp; the ACT.
+    </p>
+  </footer>
+
+  <a class="mobile-phone ph-cta" href="/quote/" aria-label="Call us">
+    <span aria-hidden="true">&#9742;</span><span class="ph-text">&nbsp;Tap to call</span>
+  </a>
+  <script is:inline>
+    (function(){
+      // 2026-05-23: phone assembled from non-contiguous fragments
+      // so no contiguous phone-number substring exists in static HTML.
+      // Google can index attributes & visible text; the .ph-cta links default to /quote/
+      // for no-JS users, and JS rewrites href to tel: + injects display text.
+      var p1 = 485, p2 = 939, p3 = 966;
+      var disp = '0' + p1 + ' ' + p2 + ' ' + p3;
+      var tel  = '+61' + p1 + p2 + p3;
+      document.querySelectorAll('.ph-cta').forEach(function(el){
+        el.setAttribute('href', 'tel:' + tel);
+        el.setAttribute('aria-label', 'Call ' + disp);
+        var t = el.querySelector('.ph-text');
+        if (t) t.textContent = ' ' + disp;
+      });
+    })();
+  </script>
+</body>
+</html>

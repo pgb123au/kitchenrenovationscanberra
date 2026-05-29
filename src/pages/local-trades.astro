@@ -1,0 +1,202 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need a licensed builder for a kitchen renovation in the ACT?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For the building work, yes — building work in the ACT is regulated under the Construction Occupations (Licensing) Act 2004, administered by Access Canberra, and builders are licensed in classes A to D depending on the scope. The plumbing and electrical must always be done by separately licensed trades and certified, regardless of how minor the job seems. A like-for-like kitchen swap may not need development approval, but the licensed-trade and certification requirements still apply."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When does a kitchen renovation need ACTPLA approval?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A cosmetic renovation that keeps the same footprint and doesn't alter structure generally doesn't need development approval through ACT Planning (ACTPLA). The moment you remove or modify a load-bearing wall, change the building footprint, or significantly alter the structure, you move into building-approval territory and usually need a building certifier. Always confirm before work starts — your licensed builder should advise you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is engineered stone still allowed in Canberra kitchens?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "High-silica engineered stone has been banned across Australia since 1 July 2024 (with imports prohibited from 1 January 2025) because of the silicosis risk to stonemasons. Natural stone, porcelain / sintered stone, and low-silica engineered stone under 1% crystalline silica remain legal and available. Safe Work Australia enforces the ban and sets the silica dust controls fabricators must follow."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I check asbestos risk in an older Canberra home?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Homes built before the mid-1980s may contain bonded asbestos, and the ACT has the additional Mr Fluffy loose-fill asbestos legacy from insulation installed between 1968 and 1980. The ACT Government's loose-fill asbestos program maintains information and an affected-properties history, and only licensed assessors and removalists should test or remove suspect material. Never disturb material you suspect contains asbestos — arrange professional testing first."
+      }
+    }
+  ]
+};
+---
+<Layout
+  title="Canberra Kitchen Renovation Resources | Licensing, Approvals &amp; Safety"
+  description="Useful Canberra kitchen renovation resources — ACT building licensing via Access Canberra, ACTPLA planning approvals, the engineered-stone silica ban, asbestos awareness and Australian Standards. Authoritative links for homeowners."
+  canonical="https://kitchenrenovationscanberra.com.au/local-trades/"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Resources for Canberra homeowners</span>
+      <h1>Canberra kitchen renovation <span class="accent">resources</span>.</h1>
+      <p class="hero-sub">
+        A renovation done properly means licensed trades, the right approvals,
+        compliant materials and safe handling of older homes. Below are the
+        authoritative ACT and national references every Canberra homeowner
+        planning a kitchen renovation should know &mdash; on licensing,
+        approvals, the engineered-stone ban, asbestos and the relevant
+        Australian Standards.
+      </p>
+      <div class="hero-actions">
+        <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Licensing &amp; approvals</span>
+      <h2>Building licensing &amp; planning approval in the ACT.</h2>
+      <div class="divider"></div>
+      <div style="max-width:65rem;">
+        <h3>Who can legally do the work.</h3>
+        <p>
+          In the ACT, building work is regulated under the <strong>Construction
+          Occupations (Licensing) Act 2004</strong> and administered by Access
+          Canberra. Builders are licensed in classes A to D depending on the
+          scope and height of work, and plumbing and electrical work must be
+          carried out by separately licensed trades and certified. You can verify
+          a licence on the Access Canberra register before you sign anything.
+          Structural changes &mdash; like opening a kitchen to the living area by
+          removing a load-bearing wall &mdash; also engage <strong>ACT Planning
+          (ACTPLA)</strong> approval and, usually, a building certifier.
+        </p>
+        <ul style="margin-top:1rem;">
+          <li style="margin-bottom:0.75rem;">
+            <strong>Access Canberra &mdash; Building &amp; construction</strong>
+            &mdash; licensing, the construction-occupations register, and
+            homeowner guidance on building work in the ACT.
+            <a href="https://www.accesscanberra.act.gov.au/business-and-work/building-and-construction" target="_blank" rel="external noopener">accesscanberra.act.gov.au</a>
+          </li>
+          <li style="margin-bottom:0.75rem;">
+            <strong>ACT Planning (ACTPLA) &mdash; Construction licences</strong>
+            &mdash; planning and building approvals, when development approval is
+            required, and the role of building certifiers.
+            <a href="https://www.planning.act.gov.au/professionals/regulation-and-responsibilities/construction-licences" target="_blank" rel="external noopener">planning.act.gov.au</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">Materials &amp; safety</span>
+      <h2>The engineered-stone ban, asbestos &amp; standards.</h2>
+      <div class="divider"></div>
+      <div style="max-width:65rem;">
+        <h3>Compliant materials and safe demolition.</h3>
+        <p>
+          Two safety issues matter most in a Canberra kitchen renovation: the
+          <strong>engineered-stone silica ban</strong> (in force nationally since
+          1 July 2024 to protect stonemasons from silicosis) and
+          <strong>asbestos</strong> in older homes &mdash; including the ACT&rsquo;s
+          Mr Fluffy loose-fill legacy from 1968&ndash;1980. The references below
+          are the authoritative sources on both, plus the Australian Standards
+          your trades work to and the relevant industry body.
+        </p>
+        <ul style="margin-top:1rem;">
+          <li style="margin-bottom:0.75rem;">
+            <strong>Safe Work Australia &mdash; Engineered stone ban</strong>
+            &mdash; the national prohibition on high-silica engineered stone, what
+            is and isn&rsquo;t allowed, and the silica dust-control requirements.
+            <a href="https://www.safeworkaustralia.gov.au/safety-topic/hazards/silica/engineered-stone-ban" target="_blank" rel="external noopener">safeworkaustralia.gov.au</a>
+          </li>
+          <li style="margin-bottom:0.75rem;">
+            <strong>ACT Loose-Fill Asbestos (Mr Fluffy) program</strong>
+            &mdash; the ACT Government&rsquo;s information on loose-fill asbestos,
+            affected-property history, and safe handling.
+            <a href="https://www.loosefillasbestos.act.gov.au/" target="_blank" rel="external noopener">loosefillasbestos.act.gov.au</a>
+          </li>
+          <li style="margin-bottom:0.75rem;">
+            <strong>Standards Australia</strong>
+            &mdash; the Australian Standards your trades work to, including AS/NZS
+            3500 (plumbing &amp; drainage), AS/NZS 3000 (electrical wiring rules)
+            and AS 3740 (waterproofing of domestic wet areas).
+            <a href="https://www.standards.org.au/" target="_blank" rel="external noopener">standards.org.au</a>
+          </li>
+          <li style="margin-bottom:0.75rem;">
+            <strong>Master Builders ACT</strong>
+            &mdash; the ACT industry body for the building and construction sector,
+            a useful consumer reference for finding and checking reputable builders.
+            <a href="https://www.mba.org.au/" target="_blank" rel="external noopener">mba.org.au</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Frequently asked</span>
+      <h2>Kitchen renovation rules in Canberra.</h2>
+      <div class="divider"></div>
+      <div style="max-width:65rem;">
+        <h3>Do I need a licensed builder?</h3>
+        <p>
+          For the building work, yes &mdash; it&rsquo;s regulated under the
+          Construction Occupations (Licensing) Act 2004 via Access Canberra, and
+          plumbing and electrical must be done by licensed, certified trades
+          regardless of how small the job is. A like-for-like kitchen swap may
+          not need development approval, but the licensed-trade and certification
+          requirements still apply.
+        </p>
+        <h3 style="margin-top:1.5rem;">When do I need ACTPLA approval?</h3>
+        <p>
+          When you alter structure or the building footprint &mdash; most commonly
+          removing a load-bearing wall to open the kitchen to living areas. A
+          cosmetic, same-footprint renovation generally doesn&rsquo;t. Confirm
+          before work starts; your licensed builder should advise you.
+        </p>
+        <h3 style="margin-top:1.5rem;">Can I still get a stone benchtop?</h3>
+        <p>
+          Yes &mdash; natural stone, porcelain and low-silica engineered stone
+          (under 1% crystalline silica) are all legal and available. Only the
+          banned high-silica engineered stone is off the table. See our
+          <a href="/services/benchtops/">benchtops page</a> for the options and
+          2026 pricing.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--c-navy);color:#fff;">
+    <div class="section-inner" style="text-align:center;">
+      <h2 style="color:#fff;">Free quote &mdash; honest Canberra kitchen pricing.</h2>
+      <p style="opacity:0.85;max-width:50rem;margin:1rem auto 2rem;">
+        Full renovations, custom cabinetry, compliant stone benchtops, design and
+        makeovers across Canberra &amp; the ACT. ACT-licensed, NCC-compliant, and
+        straight with you about what your kitchen needs.
+      </p>
+      <div class="hero-actions" style="justify-content:center;">
+        <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+</Layout>
