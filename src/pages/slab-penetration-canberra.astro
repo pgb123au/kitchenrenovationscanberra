@@ -1,0 +1,217 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why are sink waste pipes set into the slab in newer Canberra homes?",
+      "acceptedAnswer": { "@type": "Answer", "text": "From the mid-1990s onward, most volume-built Canberra homes in Gungahlin, Molonglo, Crace, Bonner, Forde, Wright and Coombs were built on engineered slab-on-ground with the kitchen waste stack and any island connection set into the slab before the pour. There is no subfloor to crawl under, so any future relocation means either chasing out the slab and re-laying the drain to a new point, or saw-cutting and grinding a new chase from the existing point back to the stack. The original kitchen sat where the slab penetration was; renovating around it means working with that fixed point or paying to move it." }
+    },
+    {
+      "@type": "Question",
+      "name": "What does it cost to move a sink stack in a Canberra slab home?",
+      "acceptedAnswer": { "@type": "Answer", "text": "As a 2026 guide, a short relocation under 1.5 m using a saw-cut chase, new PVC waste in fall, patched concrete and floor make-good usually lands in the $2,800–$4,500 range including the licensed plumber, the concretor, the floor reinstatement and a hydraulic mark-up. A longer chase of 3–5 m, or a job that crosses a slab joint or hits in-slab hydronic heating, climbs to $5,500–$9,000. A full island relocation where we need to penetrate a fresh point in the slab and re-tie into the boundary trap is usually $7,000 plus. We always price the drainage line item separately so you can see exactly what the move is costing." }
+    },
+    {
+      "@type": "Question",
+      "name": "When is a sink relocation a no-problem job versus a chase-out?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Inside about 1.5 m of the original stack, and as long as we can keep the right fall to the boundary, a relocation is typically a no-problem job — we extend in PVC, vent it correctly to AS/NZS 3500, and the existing stub becomes part of the new run. Past 1.5 m, or where the new position would force a back-fall or a re-vent, we have to chase out the slab. The other trigger is in-slab hydronic heating: if the heating loops sit between the old and new sink positions we have to map them with a thermal camera before we cut anything, because nicking a hydronic loop turns a $4,000 plumbing job into a $15,000 floor rebuild." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a building approval to move a sink in the ACT?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Replacing a kitchen in the same footprint and re-using the existing plumbing connections does not usually need an Access Canberra building approval — it is treated as exempt work under the Building (General) Regulation. The moment you alter sanitary drainage, cut into the slab or add a new connection to the sewer, the plumbing work itself must be done by an ACT-licensed plumber and is captured under the Plumbing and Drainage Act 2008, with a Notice of Intention and a Certificate of Compliance lodged. If the renovation also involves removing a structural wall to open the kitchen, that triggers a building approval through a private certifier separately." }
+    },
+    {
+      "@type": "Question",
+      "name": "What drainage assessment do you want before signing off on a new layout?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Before we commit to a layout, we want three things on the table: a sewer service location plan from Iconwater (or the as-built hydraulic plan if the house is under 15 years old), a tape measurement of the slab from the existing waste point to the proposed new sink, and a thermal scan if the home has in-slab hydronic heating. With those three we can quote the drainage line item accurately rather than estimate. If the home has none of those, we book a half-day site investigation — a small CCTV inspection through the gully and a thermal sweep of the slab — and the cost is credited back if you proceed with the renovation." }
+    }
+  ]
+};
+---
+<Layout
+  title="Slab Penetration Cost in Canberra — Moving the Sink Stack | Kitchen Renovations Canberra"
+  description="What it costs to move the sink stack in a slab-on-ground Canberra home. When a relocation is a no-problem job under 1.5 m vs a chase-and-re-pour, the drainage assessment we want before signing the layout, and how in-slab hydronic heating changes the price."
+  canonical="https://kitchenrenovationscanberra.com.au/slab-penetration-canberra/"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Slab homes &middot; Gungahlin &middot; Molonglo &middot; Crace &middot; Wright</span>
+      <h1>Moving the <span class="accent">sink stack</span> in a Canberra slab home.</h1>
+      <p class="hero-sub">
+        Almost every Canberra home built between 1995 and 2015 has its kitchen
+        waste set into the slab. Where it was poured is where the sink sits &mdash;
+        unless you pay to move it. Here&rsquo;s what a slab penetration actually
+        costs in 2026, when a relocation is a 1.5&nbsp;m no-problem job, and the
+        drainage assessment we want on the table before we sign off on any
+        layout change.
+      </p>
+      <div class="hero-actions">
+        <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why this matters</span>
+      <h2>The waste pipe was set in 1998 &mdash; and the new kitchen has to live with it.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <p>
+          If your home is in Amaroo, Forde, Bonner, Harrison, Crace, Coombs,
+          Wright or Denman Prospect, it is almost certainly a slab-on-ground
+          build. The waste stack for the kitchen sink was cast into the slab
+          before the concrete went down &mdash; usually a 40&nbsp;mm or 50&nbsp;mm PVC
+          rise inside the wall cavity, with the run to the boundary trap set
+          well below floor level. There is no subfloor. Nothing to crawl under.
+          To move it, you cut the slab.
+        </p>
+        <p>
+          That single fact dictates a huge amount of what your renovation costs.
+          A like-for-like kitchen replacement that keeps the sink in the same
+          spot is straightforward joinery and benchtop work &mdash; we run our
+          standard process and the drainage line item is near zero. A layout
+          flip that pushes the sink to the other wall, or adds a working
+          island, can add anywhere from $3,000 to $9,000 in drainage work
+          alone. It is the single line item most likely to surprise an owner
+          who has been quoted by a kitchen-only company that hasn&rsquo;t thought
+          about the slab.
+        </p>
+
+        <h3 style="margin-top: 2rem;">The 1.5 m rule of thumb.</h3>
+        <p>
+          We call it the 1.5&nbsp;m rule. Inside 1.5&nbsp;m of the existing stack,
+          and provided we can hold a fall of at least 1:60 to the boundary
+          trap, we can usually extend the waste in PVC without cutting the
+          slab &mdash; the new run sits inside the cabinetry and connects to the
+          existing stub. We&rsquo;ll re-vent if the existing branch becomes too
+          long under AS/NZS&nbsp;3500.2 and we&rsquo;ll insulate the run where it
+          crosses an external wall. Past 1.5&nbsp;m, the geometry stops working:
+          the fall runs out, or we&rsquo;d need a back-vented loop that won&rsquo;t
+          pass a Certificate of Compliance. That&rsquo;s when we chase the slab.
+        </p>
+
+        <h3 style="margin-top: 2rem;">What a chase-out looks like.</h3>
+        <p>
+          A slab chase is not the disaster owners imagine. We saw-cut a
+          straight channel about 200&nbsp;mm wide along the line of the new
+          drain, jackhammer out the concrete to a depth of around 100&nbsp;mm,
+          break through to the existing waste, lay new graded PVC, pressure
+          test the line, then re-pour the channel in non-shrink grout and tie
+          it back to the surrounding slab. A finishing screed brings it level
+          for tiling or new floor coverings. Done well by a concretor who
+          understands floor flatness, you will never see it once the new
+          flooring is down. The licensed plumber lodges a Notice of Intention
+          and issues a Certificate of Compliance on completion.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">In-slab hydronic heating</span>
+      <h2>If your floor is warm, read this before you draw a new layout.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <p>
+          Cold-climate kitchens in Canberra are increasingly being renovated
+          with in-slab hydronic heating retrofits, and a meaningful share of
+          newer homes in O&rsquo;Connor, Ainslie, Watson, Aranda and parts of
+          Forrest already have it from the original build. The heating loops
+          are 16&nbsp;mm or 20&nbsp;mm PEX-AL-PEX pipe set in serpentine patterns
+          inside the slab pour. Cutting one is recoverable &mdash; it&rsquo;s a
+          repair coupling and a re-fill &mdash; but the cost and disruption to
+          the rest of the floor is steep.
+        </p>
+        <p>
+          Before we sign off on a layout that crosses heating zones, we run a
+          thermal-imaging scan during a heating run. The loops light up clear
+          as day. We trace them onto the floor plan, mark the safe-cut
+          corridors, and route the new drain only through those corridors.
+          On three jobs this last winter in Inner North homes we redrew the
+          island position by 200&nbsp;mm to avoid a heating loop &mdash; it cost
+          nothing to change on the page and saved a $15,000 floor rebuild.
+          The thermal scan is the cheapest line item on the job.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Frequently asked</span>
+      <h2>Slab penetration &mdash; questions we get every week.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>Why are sink waste pipes set into the slab in newer Canberra homes?</h3>
+        <p>
+          From the mid-1990s onward, most volume-built Canberra homes were
+          built on engineered slab-on-ground with the kitchen waste stack
+          set into the slab before the pour. There&rsquo;s no subfloor to
+          crawl under. Future relocation means chasing out the slab and
+          re-laying drain. The original kitchen sat where the penetration
+          was; renovating around it means working with that fixed point.
+        </p>
+
+        <h3 style="margin-top: 2rem;">What does it cost to move a sink stack?</h3>
+        <p>
+          A short relocation under 1.5&nbsp;m using a saw-cut chase, new PVC
+          waste in fall, patched concrete and floor make-good usually lands
+          in the $2,800&ndash;$4,500 range including the licensed plumber,
+          concretor and floor reinstatement. A 3&ndash;5&nbsp;m chase or a job
+          that hits in-slab hydronic heating climbs to $5,500&ndash;$9,000.
+          A full island relocation is usually $7,000 plus.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Do I need building approval to move a sink in the ACT?</h3>
+        <p>
+          Replacing a kitchen in the same footprint and re-using the
+          existing connections does not usually need an Access Canberra
+          building approval. The moment you alter sanitary drainage, the
+          plumbing work itself must be done by an ACT-licensed plumber under
+          the Plumbing and Drainage Act 2008, with a Notice of Intention and
+          a Certificate of Compliance lodged. Removing a structural wall to
+          open the kitchen triggers a separate building approval through a
+          private certifier.
+        </p>
+
+        <h3 style="margin-top: 2rem;">What do you want to see before signing the layout?</h3>
+        <p>
+          A sewer service location plan from Iconwater (or the as-built
+          hydraulic plan if the home is under 15 years old), a tape
+          measurement from the existing waste to the proposed new sink, and
+          a thermal scan if the home has in-slab hydronic heating. With
+          those three we quote the drainage line item accurately rather
+          than estimate.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section">
+    <div class="section-inner cta-inner">
+      <h2>Want the slab line item priced before you fall in love with the layout?</h2>
+      <p>
+        Send us a photo of the existing sink position and a rough sketch of
+        where you want it to go. We&rsquo;ll come back with a clear yes-or-no on
+        the 1.5&nbsp;m rule and an honest range for the drainage work before
+        you sign anything.
+      </p>
+      <div class="hero-actions">
+        <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Email a free quote request</a>
+      </div>
+    </div>
+  </section>
+</Layout>

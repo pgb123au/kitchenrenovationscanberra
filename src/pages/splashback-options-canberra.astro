@@ -1,0 +1,226 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the three most common splashback choices in Canberra kitchens?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Across the jobs we run in any given quarter, the split is roughly: porcelain or ceramic tile (about 45%), toughened glass in a custom colour (about 30%), and a full-height stone splashback that matches or contrasts with the benchtop (about 25%). Mirror and stainless splashbacks still appear occasionally — usually in apartments around Kingston Foreshore and Civic where a small kitchen benefits from reflected light — but they account for less than 5% of installs. Each option suits different priorities: tile is the most cost-effective and the easiest to repair; glass is the easiest to clean and the most contemporary; stone gives the most considered, designed look and is favoured in higher-end Inner South homes." }
+    },
+    {
+      "@type": "Question",
+      "name": "What does each splashback option cost installed in 2026?",
+      "acceptedAnswer": { "@type": "Answer", "text": "As a 2026 supplied-and-installed guide for an average Canberra kitchen with around 4 m² of splashback: tile runs $1,400–$3,500 depending on the tile (subway $35/m² up to handmade Moroccan zellige $300/m²) plus tiler labour around $90–$130/m²; toughened painted glass in a custom RAL colour is typically $2,800–$4,200 (single piece preferred, butt-jointed if the run exceeds 3.2 m); a porcelain or sintered-stone full-height splashback to match the benchtop is $3,200–$6,500; natural stone (granite, marble, quartzite) full-height is $3,800–$8,500 depending on stone selection and bookmatching. Behind a gas cooktop we recommend tile or stone rather than glass for cleaner heat performance over time." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is glass safe to use behind a gas cooktop in a Canberra cold-climate kitchen?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Toughened glass is certified for use behind both gas and electric cooktops under AS/NZS 4666 and AS/NZS 2208 — it is heat-resistant up to around 220–250°C surface temperature and the manufacturer warrants it for cooktop installation. The practical concern in Canberra's cold-climate kitchens is not safety but maintenance: gas burners throw spatter, and when condensation forms on a cold glass splashback (common in winter where in-slab hydronic heating doesn't reach the wall plane), the spatter etches into the surface over years and becomes harder to clean. We still install glass behind gas, but we also tell owners with serious gas-cooking habits that a porcelain or stone splashback will look better in ten years' time." }
+    },
+    {
+      "@type": "Question",
+      "name": "Which splashback saves the most on cleaning over ten years?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Toughened glass, by a wide margin. A single sheet of glass has no grout lines, no joins, and is wiped with a microfibre cloth in 30 seconds. Tile is the highest-maintenance option: grout discolours with cooking oil over 5–7 years and needs either re-grouting or a deep clean every couple of years, and the cost of that work over a decade is real money. Full-height stone is somewhere between — it has a join with the benchtop that needs annual silicone refresh, but otherwise wipes clean like glass. If you cook a lot and hate cleaning, glass is the answer. If you love the look of tile, plan on either an epoxy grout (more expensive to install, vastly less maintenance) or expect to refresh it once a decade." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I have a full-height stone splashback if the benchtop stone has been bookmatched?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — and it's becoming the signature look in higher-end Canberra Inner South kitchens. Bookmatching means the fabricator takes two adjoining slabs from the same stone block and arranges them so the veining mirrors across the join. We extend that bookmatch up the wall, so the benchtop and the splashback read as one continuous piece of stone. It costs more (you're paying for matched slabs and more wastage), but on a Forrest, Yarralumla or Deakin renovation aiming for a 10–15 year hold, it's the single design move that lifts the kitchen out of standard and into considered. Confirm bookmatching availability at the stone-selection visit before the slabs are reserved." }
+    }
+  ]
+};
+---
+<Layout
+  title="Splashback Options in Canberra — Tile vs Glass vs Stone | Kitchen Renovations Canberra"
+  description="2026 splashback pricing and trade-offs for Canberra kitchens: porcelain and ceramic tile, toughened painted glass, and full-height stone. Cost installed, heat performance behind gas cooktops, and the option that saves the most on cleaning over ten years."
+  canonical="https://kitchenrenovationscanberra.com.au/splashback-options-canberra/"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Tile &middot; toughened glass &middot; full-height stone &middot; bookmatched</span>
+      <h1>Three <span class="accent">splashback</span> decisions, ten-year consequences.</h1>
+      <p class="hero-sub">
+        The splashback is one of the smallest line items in a Canberra
+        kitchen renovation and one of the most visible. Here&rsquo;s what tile,
+        glass and full-height stone really cost in 2026, how each one
+        behaves behind a gas cooktop in a cold-climate kitchen, and which
+        option saves the most on cleaning over a decade.
+      </p>
+      <div class="hero-actions">
+        <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">The three options</span>
+      <h2>Tile, glass, full-height stone &mdash; what each one buys you.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>Tile &mdash; the most cost-effective and the easiest to repair.</h3>
+        <p>
+          Tile is still the most-installed splashback in Canberra kitchens,
+          and for good reason: the price ceiling is low, the design vocabulary
+          is enormous, and a cracked tile is a 20-minute repair rather than
+          a $4,000 panel replacement. White subway tile remains the default
+          in rental-grade and budget Belconnen and Tuggeranong renovations.
+          In owner-occupied Gungahlin and Molonglo jobs we&rsquo;re seeing
+          handmade zellige in muted greens and pinks, large-format porcelain
+          in stone-look finishes, and finger-tile arrangements in Inner
+          North heritage kitchens.
+        </p>
+        <p>
+          The catch is grout. Standard cement grout discolours with cooking
+          oil and steam over 5&ndash;7 years and the only fixes are deep
+          cleaning (limited results), grout colour-sealing (annual
+          re-application) or re-grouting (genuine job). Epoxy grout solves
+          all of that &mdash; it&rsquo;s impervious, doesn&rsquo;t stain, and never
+          needs re-doing &mdash; but it costs about 2.5&times; cement grout to
+          install and is fussier to apply. For any tile splashback we
+          expect to look fresh in ten years, we strongly recommend epoxy.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Toughened glass &mdash; easiest to clean, most contemporary.</h3>
+        <p>
+          Painted toughened glass is the lowest-maintenance splashback
+          available. One sheet, no grout, no joins. Custom RAL colour or
+          metallic finishes are made to order in Sydney or Melbourne and
+          shipped to the Canberra installer &mdash; lead time is around
+          10&ndash;15 working days. We measure after cabinets and benchtops
+          are in to guarantee a perfect fit, with cut-outs for power points
+          and rangehood ducting templated in the glass shop. A 3.2&nbsp;m
+          single sheet covers most kitchens; longer runs need a butt-jointed
+          second piece, which is barely visible but worth knowing about.
+        </p>
+        <p>
+          Behind a gas cooktop, glass is certified safe under AS/NZS&nbsp;4666
+          and AS/NZS&nbsp;2208 but accumulates more visible spatter over
+          years than a porous stone or tile. For a serious gas cook in a
+          home you plan to hold long-term, stone is a better long-game.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Full-height stone &mdash; the designed look.</h3>
+        <p>
+          A full-height stone splashback running from benchtop to overhead
+          cabinets has become the signature finish in higher-end Canberra
+          kitchens &mdash; particularly in the Inner South, Reid, and the
+          embassy precinct. Done in matching benchtop stone with the veining
+          bookmatched across the join, it reads as one continuous piece and
+          is the single most-photographed feature in a contemporary
+          kitchen. Done in a contrasting stone (a green Verde Macaubas
+          quartzite behind a cream Calacatta benchtop, for example), it
+          becomes the focal point of the room.
+        </p>
+        <p>
+          The trade-off is cost &mdash; full-height stone is the most
+          expensive splashback option once material, fabrication and
+          installation are added. It also commits you to a single stone
+          choice for both surfaces, which constrains the design. For
+          renovations in homes that will be sold or kept for 10&ndash;15
+          years, the resale lift and the visual payoff justify the spend.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">Heat &amp; cold-climate considerations</span>
+      <h2>Canberra winters change how a splashback behaves.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <p>
+          Canberra has the coldest winters of any capital, and that
+          changes how splashbacks perform. In-slab hydronic heating keeps
+          the floor and the bottom of the cabinets warm, but the splashback
+          wall plane sits well above the heated zone. On a cold July
+          morning, the splashback is one of the coldest surfaces in the
+          kitchen &mdash; condensation forms readily, particularly when a
+          pan of water hits boiling and the room steams up. That
+          condensation rolls down a glass splashback into the silicone
+          bead at the bench, and into the grout lines on a tiled one.
+        </p>
+        <p>
+          For tile, that means the grout choice matters more in Canberra
+          than in warmer climates &mdash; epoxy or, at minimum, sealed
+          cement grout with annual re-sealing. For glass, the silicone
+          bead at the bench junction does serious work; we use a marine-
+          grade neutral-cure silicone and refresh it every 3&ndash;4 years
+          as part of standard maintenance. For full-height stone, the
+          mitred junction with the benchtop is the failure point &mdash;
+          we run a 5&nbsp;mm sealant joint and refresh annually.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Frequently asked</span>
+      <h2>Splashback questions we get every week.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>What do the three options cost installed?</h3>
+        <p>
+          For about 4&nbsp;m² of splashback in 2026: tile $1,400&ndash;$3,500
+          (tile $35&ndash;$300/m² plus tiler at $90&ndash;$130/m²); toughened
+          glass $2,800&ndash;$4,200 in a custom RAL colour; porcelain or
+          sintered-stone full-height $3,200&ndash;$6,500; natural stone
+          full-height $3,800&ndash;$8,500. Bookmatched stone is at the top
+          of the range.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Is glass safe behind a gas cooktop?</h3>
+        <p>
+          Yes, certified under AS/NZS&nbsp;4666 and AS/NZS&nbsp;2208 for use
+          behind both gas and electric. The practical concern is
+          maintenance &mdash; serious gas cooking throws spatter that
+          etches over years, and Canberra&rsquo;s cold-climate condensation
+          makes it worse. Stone or tile is a better long-game for heavy
+          gas cooks.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Which option saves the most on cleaning over a decade?</h3>
+        <p>
+          Toughened glass &mdash; no grout, no joins, microfibre cloth in 30
+          seconds. Tile is the highest maintenance unless you invest in
+          epoxy grout up front. Full-height stone sits between, with a
+          benchtop join that needs annual silicone refresh.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Can I bookmatch the splashback to the benchtop?</h3>
+        <p>
+          Yes &mdash; the fabricator reserves matched slabs from the same
+          block and mirrors the veining across the join. It costs more
+          (matched slabs plus wastage) but on a Forrest, Yarralumla or
+          Deakin renovation aiming for a 10&ndash;15 year hold, it&rsquo;s the
+          design move that lifts the kitchen out of standard.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section">
+    <div class="section-inner cta-inner">
+      <h2>Bring a Pinterest image &mdash; we&rsquo;ll price all three options.</h2>
+      <p>
+        Send us the look you want and the kitchen size, and we&rsquo;ll come
+        back with tile, glass and stone pricing side-by-side so you can see
+        the trade-off rather than guess at it.
+      </p>
+      <div class="hero-actions">
+        <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Email a free quote request</a>
+      </div>
+    </div>
+  </section>
+</Layout>

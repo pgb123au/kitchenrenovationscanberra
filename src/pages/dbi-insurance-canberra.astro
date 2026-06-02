@@ -1,0 +1,212 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Domestic Building Insurance required in the ACT like it is in Victoria?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The ACT has its own scheme that does the same job. Under the Building Act 2004 (ACT), residential building work valued at more than $12,000 must be covered either by builders' Statutory Warranty (the licensed builder's mandatory two-year non-structural and six-year structural warranty under section 88) or by a Fidelity Fund certificate from an approved fidelity scheme — at the time of writing the Master Builders Fidelity Fund is the active scheme. For an ACT kitchen renovation that crosses the $12,000 trigger (which most full renovations do), the builder must hold a current ACT building licence appropriate to the work and the warranty/fidelity cover must be in place before any deposit is paid. The Victorian DBI policy is the equivalent product down south — both protect the homeowner if the builder dies, disappears or becomes insolvent before the work is complete or before the warranty period expires." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does the cover need to be in place BEFORE I pay a deposit?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Because the entire point of the scheme is to protect the deposit and the progress payments. If a builder takes a $5,000 deposit on a $40,000 kitchen and then goes into liquidation a week later, the homeowner without a current Fidelity Fund certificate has an unsecured claim against the liquidated company and almost certainly never sees the money again. With the certificate in place from day one, the Fidelity Fund covers the loss up to the policy limit. A builder who tells you 'I'll arrange the cover once we start on site' is asking you to take the financial risk for the period between deposit and site start — which can be six to ten weeks once cabinetry is in the queue. That timing is the exact red flag we tell every Canberra owner to watch for." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I verify an ACT builder's licence and Fidelity Fund cover?",
+      "acceptedAnswer": { "@type": "Answer", "text": "There are two free checks, both done online. Access Canberra runs a public licence register at accesscanberra.act.gov.au — search by the builder's name or licence number and you'll see the licence class, expiry date, and any disciplinary history. The Master Builders Association ACT publishes a separate Fidelity Fund certificate lookup; you can request a copy of the certificate for your specific job from the builder, and verify it through the MBA. Cross-check both: the licence must be current, the licence class must match the work, and the Fidelity Fund certificate must name your address and the contract value. Five minutes of searching saves a six-figure problem." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between Statutory Warranty and Fidelity Fund cover?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Statutory Warranty is the builder's own legal promise under section 88 of the Building Act — it covers structural defects for six years and non-structural defects for two years from completion, but it relies on the builder still being in business and solvent to honour it. Fidelity Fund cover is a third-party scheme that steps in if the builder cannot — death, disappearance, or insolvency. Most ACT residential building work over $12,000 should have both: a licensed builder backing their work, plus the Fidelity Fund standing behind that licence. They are complementary, not alternatives." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the Fidelity Fund cover cosmetic touch-ups and minor defects?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The Fidelity Fund is not a workmanship complaints scheme — it activates on builder failure (death, disappearance, insolvency, licence suspension), not on a paint chip or a misaligned drawer. Cosmetic and minor workmanship issues are dealt with through the builder's own defects period and, if unresolved, escalated to the ACT Civil and Administrative Tribunal (ACAT) as a building dispute. For most renovations the defects liability period is 12 months from practical completion — we walk every kitchen at 90 days and again at 11 months and fix anything off-spec before the period closes." }
+    }
+  ]
+};
+---
+<Layout
+  title="DBI Insurance / Fidelity Fund Check Before Deposit in Canberra | Kitchen Renovations Canberra"
+  description="The ACT equivalent of Victoria's Domestic Building Insurance — how to verify a builder's ACT licence and Master Builders Fidelity Fund certificate before you pay a deposit, why 'we'll get it before site start' is a red flag, and the five-minute checks every Canberra owner should run."
+  canonical="https://kitchenrenovationscanberra.com.au/dbi-insurance-canberra/"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Compliance &middot; ACT Building Act 2004 &middot; MBA Fidelity Fund</span>
+      <h1>The <span class="accent">five-minute insurance check</span> every Canberra owner should run.</h1>
+      <p class="hero-sub">
+        Before you pay a single dollar of deposit on a Canberra kitchen
+        renovation over $12,000, two free online checks tell you whether the
+        builder is licensed and whether your money is protected if they go
+        under. Here&rsquo;s exactly how to run them, and why &lsquo;we&rsquo;ll get the
+        cover before site start&rsquo; is the answer that should make you walk
+        away.
+      </p>
+      <div class="hero-actions">
+        <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">The ACT scheme</span>
+      <h2>The ACT has its own version &mdash; and most Canberra owners don&rsquo;t know it exists.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <p>
+          Victorian owners are usually familiar with Domestic Building
+          Insurance (DBI), the mandatory cover on residential building work
+          over $16,000 in that state. In the ACT, the same protection works
+          a little differently. The Building Act 2004 (ACT) requires
+          residential building work valued at more than $12,000 to be either
+          covered by the builder&rsquo;s Statutory Warranty under section&nbsp;88
+          (the mandatory two-year non-structural / six-year structural
+          warranty) or, more commonly for kitchen and bathroom renovations,
+          backed by a Fidelity Fund certificate from an approved fidelity
+          scheme. At the time of writing the Master Builders Association
+          ACT runs the active fidelity scheme.
+        </p>
+        <p>
+          The product does the same job as Victorian DBI: if the builder
+          dies, disappears or goes insolvent before the job is complete or
+          before the warranty period expires, the scheme covers the
+          homeowner&rsquo;s loss up to the policy limit. For a kitchen
+          renovation in Reid, Forrest, Yarralumla, Manuka or Kingston where
+          the contract value routinely crosses $40,000&ndash;$80,000 once
+          cabinetry, stone and appliances are in, this is not optional and
+          it is not theoretical. The MBA Fidelity Fund processes claims
+          against insolvent ACT builders every year.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Why the public-service-buyer market matters here.</h3>
+        <p>
+          A large share of Canberra kitchen renovations are bought by
+          long-tenured public service households &mdash; SES staff, defence
+          professionals, and senior policy advisers in their 50s and 60s
+          with established equity, paying for a job at the higher end of the
+          renovation market. That market profile is exactly the one that
+          attracts builders who over-extend on quoting, take large deposits
+          to fund the previous job, and quietly fold when the cabinetry
+          arrives. The Fidelity Fund certificate is the only thing standing
+          between an owner and a $30,000 deposit walking out the door.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">How to verify</span>
+      <h2>Two free lookups. Five minutes. Done before deposit.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>Check 1 &mdash; Access Canberra builder licence register.</h3>
+        <p>
+          Search the builder by name or licence number on the Access
+          Canberra public register. You&rsquo;re looking for three things: the
+          licence is current (not expired, not suspended), the licence class
+          covers the work (Class A or B for a kitchen renovation that
+          touches structure or wet areas), and the disciplinary history is
+          clean. A licence under a different name to the trading company is
+          not necessarily a problem &mdash; many builders trade under a brand
+          while the licence sits with the nominee director &mdash; but the
+          name on the contract should match the name on the certificate.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Check 2 &mdash; Master Builders Fidelity Fund certificate.</h3>
+        <p>
+          Ask the builder for a copy of the Fidelity Fund certificate that
+          names your specific address and the contract value. Verify it
+          through the Master Builders Association ACT. The certificate
+          should be in your hand before you transfer any deposit. We hand
+          ours over at contract signing as a matter of routine &mdash; not
+          because it&rsquo;s special, but because that&rsquo;s the rule.
+        </p>
+
+        <h3 style="margin-top: 2rem;">The red-flag answers.</h3>
+        <p>
+          &ldquo;We&rsquo;ll arrange the cover once we start on site&rdquo; means six to
+          ten weeks of unsecured deposit while cabinetry is in the queue.
+          &ldquo;Our cover is at the company level, not per-job&rdquo; is not how the
+          ACT scheme works &mdash; each job over $12,000 needs its own
+          certificate. &ldquo;The licence is in someone else&rsquo;s name but
+          don&rsquo;t worry about that&rdquo; should make you walk. None of these
+          answers are paranoid concerns. They are the exact patterns that
+          show up in every MBA Fidelity Fund claim file.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Frequently asked</span>
+      <h2>Compliance questions we get every week.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>Is DBI required in the ACT like it is in Victoria?</h3>
+        <p>
+          The ACT has its own scheme. Residential building work over
+          $12,000 must be covered by Statutory Warranty plus a Fidelity
+          Fund certificate from an approved fidelity scheme. MBA runs the
+          active scheme. Same job as Victorian DBI &mdash; protects the
+          homeowner if the builder fails.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Why does the cover need to be in place before deposit?</h3>
+        <p>
+          The scheme protects the deposit and progress payments. Between
+          deposit and site start can be six to ten weeks. Without an active
+          certificate, an insolvency in that window leaves the deposit as
+          an unsecured claim against the liquidated company.
+        </p>
+
+        <h3 style="margin-top: 2rem;">How do I verify the builder?</h3>
+        <p>
+          Access Canberra public licence register (current, correct class,
+          clean history) and Master Builders Fidelity Fund certificate
+          (names your address, names the contract value). Five minutes,
+          both free.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Does Fidelity Fund cover cosmetic defects?</h3>
+        <p>
+          No. The Fidelity Fund activates on builder failure, not on
+          workmanship complaints. Cosmetic and minor defects go through the
+          builder&rsquo;s own defects liability period (usually 12 months) and
+          escalate to ACAT if unresolved. We walk every kitchen at 90 days
+          and again at 11 months.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section">
+    <div class="section-inner cta-inner">
+      <h2>We&rsquo;ll hand you the certificate at contract signing.</h2>
+      <p>
+        That&rsquo;s the rule. Send us your job and we&rsquo;ll quote with the
+        Fidelity Fund line item, the licence number, and the certificate
+        details on the page &mdash; before you&rsquo;re asked for a deposit.
+      </p>
+      <div class="hero-actions">
+        <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Email a free quote request</a>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,222 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's the cabinet lead time for a Canberra kitchen renovation in 2026?",
+      "acceptedAnswer": { "@type": "Answer", "text": "As a 2026 guide for a typical Canberra job: bespoke locally-made joinery from a Fyshwick or Mitchell cabinet maker is running about 4 to 5 weeks from final-sign-off drawings to delivered carcases — sometimes 6 weeks during the spring peak from September to November. Imported flat-pack carcases (typically Polish or Chinese) are 2 to 3 weeks, including freight from the Sydney warehouse to the Canberra showroom. Hybrid programs — flat-pack carcases with locally-made bespoke doors in a custom colour — sit in the middle, around 3 to 4 weeks. The lead time has not blown out the way it did in 2022–2023; supply is healthy and prices have stabilised." }
+    },
+    {
+      "@type": "Question",
+      "name": "What does bespoke joinery actually cost per linear metre in Canberra?",
+      "acceptedAnswer": { "@type": "Answer", "text": "As a 2026 guide, supplied and installed: a flat-pack base unit with a melamine door averages about $400–$550 per linear metre. A flat-pack base with a 2-pack polyurethane door in a custom colour lifts it to $700–$1,000 per linear metre. Locally-made bespoke base cabinetry with a 2-pack door, soft-close drawers and customised internals lands at $1,400–$2,200 per linear metre. Overhead and tall units sit at similar rates. The premium for going bespoke buys precision (every cabinet is built to the millimetre for the room, not standard 300/450/600/900 modules), a longer warranty (typically 7–10 years versus 2 on flat-pack), and a far better outcome on awkward Canberra room geometries — old Reid bungalows, embassy-precinct apartments, and Inner-South 1950s homes rarely have square corners." }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the engineered-stone ban affect benchtop scheduling?",
+      "acceptedAnswer": { "@type": "Answer", "text": "From 1 July 2024 the national ban on high-silica engineered stone (over 1% crystalline silica) came into effect — manufacture, supply, processing and installation were all prohibited because cutting it was causing silicosis in stonemasons, and imports were banned from 1 January 2025. The ACT followed the national lead. Practically, that doesn't slow your kitchen down: stone fabricators have moved to low-silica engineered products, porcelain (sintered stone), natural granite, marble and quartzite. The fabrication time is similar — usually 7 to 10 working days from template to install. What changed is the price ceiling on engineered stone (it's no longer the cheapest premium option) and the safety culture in stone shops (proper wet-cutting, masks, dust extraction). We only quote and install compliant materials." }
+    },
+    {
+      "@type": "Question",
+      "name": "What does a programmed schedule actually look like?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A typical fully-bespoke Canberra kitchen runs about 10 to 12 weeks elapsed from contract signing to handover, of which only 3 to 4 weeks is on site. Weeks 1–2 are detailed measure and final drawings. Weeks 2–6 are cabinet manufacture in the workshop (no disruption to your home). Week 6 we start on site: demolition and strip-out day one, services rough-in (plumbing, electrical, gas if needed) days two to four, carcase install days five to seven. Week 7 the stone fabricator templates the benchtops. Week 8 the bench is fitted, splashback goes in, fit-off plumbing and electrical, appliances are connected. Week 9 is the handover walk and the defects list is closed within 14 days. A flat-pack job compresses the manufacture window and runs 7 to 9 weeks elapsed." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is locally-made joinery worth the extra wait in heritage and embassy-precinct homes?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Inner North heritage zones (Reid, Braddon, Lyneham), Inner South (Forrest, Yarralumla, Deakin), and the embassy precinct have housing stock built between the 1920s and 1960s — solid brick, often single-skin, with walls that are out of plumb by 10 to 25 mm over a 3 metre run. Standard flat-pack modules can't absorb that geometry; they end up with gaps at the wall, scribed fillers that look bolted-on, and benchtops with visible packers. Bespoke joinery is built with scribe stiles and adjustable end panels designed to take up the run, so the finished kitchen sits flush against an out-of-true wall and looks original to the house. On a $80,000 kitchen in a 1920s Braddon cottage, the extra 2 weeks for local manufacture is the difference between a renovation that looks bought and one that looks built." }
+    }
+  ]
+};
+---
+<Layout
+  title="Kitchen Cabinet Lead Time in Canberra 2026 — Bespoke vs Flat-Pack | Kitchen Renovations Canberra"
+  description="2026 lead times for kitchen cabinetry in Canberra: bespoke local joinery from Fyshwick and Mitchell at 4–5 weeks vs imported flat-pack at 2–3 weeks. Price per linear metre, the silica-ban impact on stone scheduling, and a real 10-week programmed schedule."
+  canonical="https://kitchenrenovationscanberra.com.au/cabinet-lead-time-canberra/"
+>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">2026 lead times &middot; Fyshwick &middot; Mitchell &middot; imported flat-pack</span>
+      <h1>Bespoke vs flat-pack: what your <span class="accent">cabinet lead time</span> really looks like in 2026.</h1>
+      <p class="hero-sub">
+        Canberra-made bespoke joinery is back to a comfortable 4&ndash;5 week
+        build time. Imported flat-pack lands at 2&ndash;3 weeks. Stone is 7&ndash;10
+        days from template to install. Here&rsquo;s what the price-per-linear-metre
+        comparison really looks like for 2026, the silica-ban impact on stone
+        scheduling, and a programmed week-by-week schedule you can hold us to.
+      </p>
+      <div class="hero-actions">
+        <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">The numbers</span>
+      <h2>Lead times have stabilised &mdash; here&rsquo;s 2026.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <p>
+          The 2022&ndash;2023 supply chaos that pushed cabinet lead times to
+          12 weeks and more is genuinely over. Canberra cabinet makers in
+          Fyshwick and Mitchell are back to running comfortable 4&ndash;5 week
+          workshop programs. Imported flat-pack lines from Polish and
+          Chinese factories &mdash; warehoused in Sydney and trucked down
+          the Hume &mdash; are at 2&ndash;3 weeks delivered. The spring peak
+          (September through November, when half the city seems to start a
+          renovation at once) stretches bespoke times to 6 weeks; outside
+          that window the program is healthy.
+        </p>
+        <p>
+          What this means for you as an owner: if you want to be cooking in
+          a new kitchen by Christmas 2026, you have until about mid-September
+          to sign a bespoke contract and still hit it comfortably. Flat-pack
+          gives you another four weeks of decision time. A kitchen starting
+          in autumn or winter has no scheduling pressure at all &mdash; the
+          quietest months are May, June and July.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Price per linear metre &mdash; 2026 numbers.</h3>
+        <p>
+          The market has roughly three tiers. <strong>Flat-pack with a
+          melamine door</strong> sits at about $400&ndash;$550 per linear metre
+          installed &mdash; the right product for a rental, an investment
+          flip in Tuggeranong or Weston Creek, or a teenage rumpus kitchen.
+          <strong>Flat-pack carcase with a 2-pack polyurethane door in a
+          custom colour</strong> lifts the figure to $700&ndash;$1,000 per linear
+          metre &mdash; a popular middle-ground for Belconnen and Gungahlin
+          owner-occupied renovations. <strong>Locally-made bespoke
+          joinery</strong> with a 2-pack door, soft-close hardware
+          throughout and customised internals lands at $1,400&ndash;$2,200 per
+          linear metre. The latter is what we recommend for any home that
+          will be sold inside ten years &mdash; the resale lift on a
+          well-built bespoke kitchen in Forrest, Yarralumla or Deakin
+          consistently exceeds the build cost.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">Scheduling the stone</span>
+      <h2>The silica ban hasn&rsquo;t blown out the program &mdash; it&rsquo;s changed the materials.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <p>
+          The national engineered-stone ban took effect on 1 July 2024 and
+          imports were prohibited from 1 January 2025. High-silica engineered
+          stone (anything over 1% crystalline silica) is no longer
+          manufactured, supplied, processed or installed in Australia
+          because cutting it was causing silicosis in stonemasons at
+          unacceptable rates. The ACT followed the national lead.
+        </p>
+        <p>
+          For owners, the practical impact on scheduling is small. Stone
+          fabricators moved quickly to low-silica engineered products
+          (under 1% crystalline silica), porcelain / sintered stone,
+          natural granite, marble and quartzite. Template-to-install is
+          still 7&ndash;10 working days. What changed is the price ceiling on
+          engineered stone (it&rsquo;s no longer the budget premium option) and
+          the safety culture in fabrication shops &mdash; wet-cutting,
+          extraction and proper respirators are now standard. We only quote
+          and install compliant materials. If a fabricator in 2026 is still
+          offering &lsquo;engineered stone like Caesarstone Calacatta Nuvo&rsquo;
+          they are either misrepresenting a compliant product or selling
+          old stock that should not be installed.
+        </p>
+
+        <h3 style="margin-top: 2rem;">A real programmed schedule.</h3>
+        <p>
+          A typical fully-bespoke Canberra kitchen runs around 10&ndash;12
+          weeks elapsed from contract to handover, of which only 3&ndash;4
+          weeks is on-site disruption. The breakdown:
+        </p>
+        <ul>
+          <li><strong>Week 1&ndash;2</strong> &mdash; detailed measure, services check, final drawings signed off</li>
+          <li><strong>Week 2&ndash;6</strong> &mdash; cabinet manufacture in the workshop, no disruption to your home</li>
+          <li><strong>Week 6</strong> &mdash; demolition day one, services rough-in days 2&ndash;4 (plumbing to AS/NZS&nbsp;3500, electrical to AS/NZS&nbsp;3000), carcase install days 5&ndash;7</li>
+          <li><strong>Week 7</strong> &mdash; stone templating once cabinets are level</li>
+          <li><strong>Week 8</strong> &mdash; benchtop fit, splashback install, fit-off plumbing and electrical, appliance connection</li>
+          <li><strong>Week 9</strong> &mdash; handover walk, defects list, all corrections closed within 14 days</li>
+        </ul>
+        <p>
+          Flat-pack programs compress the manufacture window and run
+          7&ndash;9 weeks elapsed. We share the Gantt at contract signing and
+          send a weekly progress note every Friday so you know exactly
+          where the job is sitting.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Frequently asked</span>
+      <h2>Lead-time questions we get every week.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>What&rsquo;s the cabinet lead time in 2026?</h3>
+        <p>
+          Bespoke locally-made: 4&ndash;5 weeks, 6 weeks in the September&ndash;
+          November peak. Imported flat-pack: 2&ndash;3 weeks. Hybrid
+          (flat-pack carcase with bespoke doors): 3&ndash;4 weeks. Stone
+          fabrication: 7&ndash;10 working days from template to install.
+        </p>
+
+        <h3 style="margin-top: 2rem;">What does bespoke cost per linear metre?</h3>
+        <p>
+          Flat-pack melamine $400&ndash;$550. Flat-pack with 2-pack door
+          $700&ndash;$1,000. Locally-made bespoke 2-pack with soft-close and
+          customised internals $1,400&ndash;$2,200 per linear metre. The
+          premium buys millimetric precision, longer warranty and a far
+          better outcome on out-of-square Canberra room geometries.
+        </p>
+
+        <h3 style="margin-top: 2rem;">How does the engineered-stone ban affect my program?</h3>
+        <p>
+          The ban is fully in effect &mdash; manufacture, supply, processing
+          and installation of high-silica engineered stone is prohibited.
+          The ACT followed the national lead. Stone fabricators moved to
+          low-silica engineered, porcelain, granite, marble and quartzite.
+          Template-to-install is still 7&ndash;10 days. No program impact.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Why does heritage stock need bespoke?</h3>
+        <p>
+          Inner North and Inner South homes from the 1920s&ndash;1960s have
+          walls out of plumb by 10&ndash;25&nbsp;mm over a 3&nbsp;m run.
+          Flat-pack modules can&rsquo;t absorb that. Bespoke uses scribe stiles
+          and adjustable end panels so the finished kitchen sits flush.
+          The 2 extra weeks is the difference between a kitchen that looks
+          bought and one that looks built.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section">
+    <div class="section-inner cta-inner">
+      <h2>We&rsquo;ll send you the Gantt chart before you sign.</h2>
+      <p>
+        Tell us your move-in deadline and we&rsquo;ll work backwards from it.
+        Bespoke or flat-pack &mdash; you&rsquo;ll know exactly when you&rsquo;ll be
+        cooking again before you commit.
+      </p>
+      <div class="hero-actions">
+        <a class="ph-cta btn btn-primary" href="/quote/" aria-label="Call us"><span aria-hidden="true">&#9742;</span> <span class="ph-text">Tap to call</span></a>
+        <a class="btn btn-ghost" href="/quote/">Email a free quote request</a>
+      </div>
+    </div>
+  </section>
+</Layout>
