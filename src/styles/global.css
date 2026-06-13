@@ -522,3 +522,21 @@ li { margin-bottom: 0.4rem; }
 @media (max-width: 500px) {
   .brand img { height: 44px; }
 }
+
+/* ===== project-doctor 2026-06-13 — a11y baseline ===== */
+*:focus-visible {
+  outline: 2px solid #d97706;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+.mobile-phone {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+.nav-cta, .form-card button, button.primary {
+  min-height: 44px;
+}
+/* ===== end project-doctor ===== */
